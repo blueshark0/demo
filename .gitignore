@@ -1,0 +1,14 @@
+# 编译输出
+out/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# 文件 IO 练习运行时生成的数据
+src/com/learn/m15_fileio/data/
+
+# 系统文件
+.DS_Store
+Thumbs.db
