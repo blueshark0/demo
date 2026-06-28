@@ -28,7 +28,7 @@ public class Ex01_CreateOptional {
         Optional<String> b = Optional.ofNullable(null); // 空（因为传了 null）
 
         // TODO(关卡1-1)：把 null 改成 Optional.empty()
-        Optional<String> c = null;
+        Optional<String> c = Optional.empty();
 
         System.out.println("a 有值吗？ " + a.isPresent());
         System.out.println("b 有值吗？ " + b.isPresent());

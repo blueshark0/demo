@@ -26,7 +26,7 @@ public class Ex02_EnumWithFields {
 
     public static void main(String[] args) {
         // TODO(关卡2-1)：把 null 改成 Planet.EARTH
-        Planet p = null;
+        Planet p = Planet.EARTH;
 
         System.out.println(p + " 的重力是 " + p.getGravity());
     }

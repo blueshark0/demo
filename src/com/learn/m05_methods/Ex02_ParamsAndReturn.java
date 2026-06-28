@@ -23,8 +23,8 @@ public class Ex02_ParamsAndReturn {
 
     static int add(int a, int b) {
         // TODO(关卡2-1)：返回 a + b 的结果
+        return a + b;
         //   提示：return a + b;
-        throw new UnsupportedOperationException("请补全 add() 方法体");
     }
 
     public static void main(String[] args) {

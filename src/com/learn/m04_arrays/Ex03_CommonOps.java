@@ -1,5 +1,6 @@
 package com.learn.m04_arrays;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /*
@@ -30,16 +31,23 @@ public class Ex03_CommonOps {
         int max = data[0];
         for (int v : data) {
             // TODO(关卡3-1)：如果 v 比 max 大，就把 v 赋给 max
+            if(v > max){
+                max = v;
+            }
             //   提示：if (v > max) max = v;
         }
 
         int min = data[0];
         for (int v : data) {
             // TODO(关卡3-2)：如果 v 比 min 小，就把 v 赋给 min
+            if(v < min){
+                min = v;
+            }
             //   提示：if (v < min) min = v;
         }
 
         // TODO(关卡3-3)：用 Arrays.sort(data) 给数组排序
+        Arrays.sort(data);
         //   提示：Arrays.sort(data);
 
         System.out.println("最大值 = " + max);

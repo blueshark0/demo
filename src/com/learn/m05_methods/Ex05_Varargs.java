@@ -22,8 +22,12 @@ public class Ex05_Varargs {
 
     static int sum(int... nums) {
         // TODO(关卡5-1)：遍历 nums 求和并返回
+        int total = 0;
+        for(int n : nums) {
+            total = total + n;
+        }
+        return total;
         //   提示：先 int total = 0; 再 for (int n : nums) total += n; 最后 return total;
-        throw new UnsupportedOperationException("请补全 sum() 方法体");
     }
 
     public static void main(String[] args) {

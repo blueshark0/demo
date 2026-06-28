@@ -48,18 +48,16 @@ class Person {
     @Override
     public String toString() {
         // TODO(关卡6-1)：返回 "Person{name=" + name + ", age=" + age + "}"
-        throw new UnsupportedOperationException("请补全 toString()");
+        return "Person{name=" + name + ", age=" + age + "}";
     }
 
     @Override
     public boolean equals(Object o) {
         // TODO(关卡6-2)：当 o 也是 Person，且 name、age 都相同时返回 true
-        //   提示（可直接照抄）：
-        //     if (this == o) return true;
-        //     if (!(o instanceof Person)) return false;
-        //     Person other = (Person) o;
-        //     return age == other.age && name.equals(other.name);
-        throw new UnsupportedOperationException("请补全 equals()");
+             if (this == o) return true;
+             if (!(o instanceof Person)) return false;
+             Person other = (Person) o;
+             return age == other.age && name.equals(other.name);
     }
 
     @Override

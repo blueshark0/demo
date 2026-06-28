@@ -28,6 +28,7 @@ public class Ex04_Wildcards {
         double total = 0;
         for (Number n : list) {
             // TODO(关卡4-1)：把 n 转成 double 加到 total
+            total += n.doubleValue();
             //   提示：total += n.doubleValue();
         }
         return total;

@@ -35,14 +35,14 @@ class Account {
 
     public void setBalance(double balance) {
         // TODO(关卡3-1)：把参数 balance 赋给字段（用 this 区分）
+        this.balance = balance;
         //   提示：this.balance = balance;
-        throw new UnsupportedOperationException("请补全 setBalance()");
     }
 
     public double getBalance() {
         // TODO(关卡3-2)：返回字段 balance
         //   提示：return balance;
-        throw new UnsupportedOperationException("请补全 getBalance()");
+        return balance;
     }
 }
 

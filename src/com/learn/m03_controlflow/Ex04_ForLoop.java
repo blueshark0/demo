@@ -26,6 +26,7 @@ public class Ex04_ForLoop {
         int row = 7;
 
         for (int col = 1; col <= 9; col++) {
+            System.out.print(row + "x" + col + "=" + row * col + " ");
             // TODO(关卡4-1)：打印 "7x1=7 " 这样的算式（末尾带一个空格，不换行）
             //   提示：System.out.print(row + "x" + col + "=" + (row * col) + " ");
         }

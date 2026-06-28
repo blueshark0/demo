@@ -41,6 +41,7 @@ public class Ex03_FilesPath {
             String line;
             while ((line = reader.readLine()) != null) {
                 // TODO(关卡3-1)：打印 "读到：" + line
+                System.out.println("读到：" + line);
                 //   提示：System.out.println("读到：" + line);
             }
         }

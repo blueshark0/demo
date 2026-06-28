@@ -25,11 +25,11 @@ public class Ex01_CreateAndConcat {
         String second = "Java";
 
         // TODO(关卡1-1)：把空串改成 first + " " + second
-        String greeting = "";
+        String greeting = first + " " + second;
 
         int year = 2024;
         // TODO(关卡1-2)：把空串改成 "Java " + year
-        String withYear = "";
+        String withYear = "java" + " " +year;
 
         System.out.println(greeting);
         System.out.println(withYear);

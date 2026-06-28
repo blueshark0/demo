@@ -26,7 +26,7 @@ public class Ex03_ThrowThrows {
         // TODO(关卡3-1)：当 age < 0 时，抛出 new Exception("年龄不能为负")
         //   提示：if (age < 0) throw new Exception("年龄不能为负");
         if (age < 0) {
-            throw new UnsupportedOperationException("请把这里改成抛出 Exception(\"年龄不能为负\")");
+            throw new UnsupportedOperationException("年龄不能为负");
         }
         System.out.println("年龄合法：" + age);
     }

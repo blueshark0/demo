@@ -49,14 +49,16 @@ class Dog extends Animal {
 
     Dog(String name) {
         // TODO(关卡4-1)：在这一行用 super(name) 调用父类的带参构造器
+        super(name);
         //   注意：super(...) 必须是构造器的第一行；
         //   如果这里什么都不写，Java 会自动调用父类无参构造器，name 会变成“未命名”。
     }
 
     void bark() {
         // TODO(关卡4-2)：打印  name + " 汪汪叫"
+        System.out.println(name + " " + "汪汪叫");
         //   提示：System.out.println(name + " 汪汪叫");
-        throw new UnsupportedOperationException("请补全 bark()");
+
     }
 }
 

@@ -28,6 +28,7 @@ public class Ex04_Random {
 
         for (int i = 0; i < 3; i++) {
             // TODO(关卡4-1)：打印 random.nextInt(100)
+            System.out.println(random.nextInt(100));
             //   提示：System.out.println(random.nextInt(100));
         }
     }

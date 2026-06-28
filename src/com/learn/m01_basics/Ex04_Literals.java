@@ -25,19 +25,19 @@ public class Ex04_Literals {
     public static void main(String[] args) {
 
         // TODO(关卡4-1)：用下划线分隔写出一百万（1_000_000）
-        int million = 0;
+        int million = 1_000_000;
 
         // TODO(关卡4-2)：用十六进制写出 255（0xFF）
-        int hex = 0;
+        int hex = 0xFF;
 
         // TODO(关卡4-3)：用二进制写出 10（0b1010）
-        int binary = 0;
+        int binary = 0b1010;
 
         // TODO(关卡4-4)：用科学计数法写出 1500.0（1.5e3）
-        double scientific = 0;
+        double scientific = 1.5e3;
 
         // TODO(关卡4-5)：用 Unicode 转义写出字母 A（'A'）
-        char unicode = ' ';
+        char unicode = 'A';
 
         System.out.println("一百万 = " + million);
         System.out.println("0xFF = " + hex);

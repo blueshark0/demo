@@ -27,7 +27,7 @@ public class Ex03_Immutability {
     public static void main(String[] args) {
         String s = "hello";
         // TODO(关卡3-1)：把空串改成 s.toUpperCase()
-        String upper = "";
+        String upper = s.toUpperCase();
 
         System.out.println("原串 s = " + s);       // s 自己不会变
         System.out.println("大写 upper = " + upper);
@@ -36,9 +36,9 @@ public class Ex03_Immutability {
         String c = new String("java"); // 用 new 创建，是另一个对象
 
         // TODO(关卡3-2)：把 false 改成 (a == c)  —— 比较是不是同一个对象
-        boolean sameRef = false;
+        boolean sameRef = a == c;
         // TODO(关卡3-3)：把 false 改成 a.equals(c) —— 比较内容是否相同
-        boolean sameContent = false;
+        boolean sameContent = a.equals(c);
 
         System.out.println("a == c ? " + sameRef);
         System.out.println("a.equals(c) ? " + sameContent);

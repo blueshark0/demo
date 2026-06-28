@@ -24,9 +24,9 @@ public class Ex02_WrapperParse {
 
     public static void main(String[] args) {
         // TODO(关卡2-1)：把 0 改成 Integer.parseInt("100")
-        int n = 0;
+        int n = Integer.parseInt("100");
         // TODO(关卡2-2)：把 0 改成 Double.parseDouble("3.14")
-        double d = 0;
+        double d = Double.parseDouble("3.14");
 
         Integer boxed = 42;   // 自动装箱：int 42 变成 Integer 对象
         int unboxed = boxed;  // 自动拆箱：Integer 变回 int

@@ -28,11 +28,16 @@ public class Ex04_StringBuilder {
         StringBuilder sb = new StringBuilder();
         // TODO(关卡4-1)：用 append 依次追加 "a"、"b"、"c"
         //   提示：sb.append("a"); sb.append("b"); sb.append("c");
+        sb.append("a");
+        sb.append("b");
+        sb.append("c");
+        //sb.append("a").append("b").append("c");
         //        （也可以写成链式：sb.append("a").append("b").append("c");）
         String built = sb.toString();
 
         StringBuilder sb2 = new StringBuilder("abcde");
         // TODO(关卡4-2)：用 reverse 反转 sb2
+        sb2.reverse();
         //   提示：sb2.reverse();
         String reversed = sb2.toString();
 

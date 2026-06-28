@@ -33,7 +33,7 @@ public class Ex03_ClassObject {
         System.out.println("c1 简单名 = " + c1.getSimpleName());
 
         // TODO(关卡3-1)：把空串改成 c2.getSimpleName()
-        String simple = "";
+        String simple = c2.getSimpleName();
         System.out.println("c2 简单名 = " + simple);
     }
 }

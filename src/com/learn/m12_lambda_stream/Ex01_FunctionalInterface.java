@@ -36,7 +36,7 @@ public class Ex01_FunctionalInterface {
 
         // 新写法：Lambda（等价于上面，但简洁很多）
         // TODO(关卡1-1)：把 null 改成 "你好，" + name
-        Greeter g2 = name -> null;
+        Greeter g2 = name -> "你好，" + name;
 
         System.out.println(g1.greet("匿名类"));
         System.out.println(g2.greet("Lambda"));

@@ -30,10 +30,10 @@ public class Ex01_IfElse {
         if (score >= 90) {
             grade = "优秀";
         // TODO(关卡1-1)：把 false 改成 score >= 80
-        } else if (false) {
+        } else if (score >= 80) {
             grade = "良好";
         // TODO(关卡1-2)：把 false 改成 score >= 60
-        } else if (false) {
+        } else if (score >= 60) {
             grade = "及格";
         } else {
             grade = "不及格";

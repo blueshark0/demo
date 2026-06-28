@@ -23,8 +23,12 @@ public class Ex04_Recursion {
 
     static long factorial(int n) {
         // TODO(关卡4-1)：用递归返回 n!
+        if (n <= 1){
+            return 1;
+        }else{
+            return n * factorial(n - 1);
+        }
         //   提示：当 n <= 1 时返回 1；否则返回 n * factorial(n - 1)
-        throw new UnsupportedOperationException("请补全 factorial() 方法体");
     }
 
     public static void main(String[] args) {

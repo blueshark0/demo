@@ -29,10 +29,9 @@ public class Ex03_JavaTime {
         LocalDate date = LocalDate.of(2024, 1, 15);
 
         // TODO(关卡3-1)：把 date 改成 date.plusDays(20)
-        LocalDate later = date;
+        LocalDate later = date.plusDays(20);
 
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-
         System.out.println("原日期 = " + date.format(fmt));
         System.out.println("20天后 = " + later.format(fmt));
         System.out.println("原日期是几月 = " + date.getMonthValue());

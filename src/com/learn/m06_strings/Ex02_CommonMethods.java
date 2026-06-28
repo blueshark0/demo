@@ -1,5 +1,7 @@
 package com.learn.m06_strings;
 
+import java.util.Arrays;
+
 /*
  * ============================================================
  * 模块：m06 String 字符串
@@ -27,19 +29,19 @@ public class Ex02_CommonMethods {
         String s = "Hello, Java";
 
         // TODO(关卡2-1)：把 0 改成 s.length()
-        int len = 0;
+        int len = s.length();
         // TODO(关卡2-2)：把空格改成 s.charAt(0)
-        char first = ' ';
+        char first = s.charAt(0);
         // TODO(关卡2-3)：把空串改成 s.substring(7)
-        String sub = "";
+        String sub = s.substring(7);
         // TODO(关卡2-4)：把 0 改成 s.indexOf("Java")
-        int idx = 0;
+        int idx = s.indexOf("Java");
         // TODO(关卡2-5)：把空串改成 s.toUpperCase()
-        String upper = "";
+        String upper = s.toUpperCase();
 
         String csv = "a,b,c";
         // TODO(关卡2-6)：把右边改成 csv.split(",")
-        String[] parts = new String[]{"", "", ""};
+        String[] parts = csv.split(",");
 
         System.out.println("长度 = " + len);
         System.out.println("首字符 = " + first);

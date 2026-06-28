@@ -24,9 +24,13 @@ public class Ex01_CreateAndAccess {
     public static void main(String[] args) {
         int[] nums = new int[3];
 
+
         // TODO(关卡1-1)：给 nums[0] 赋值 10
+        nums[0] = 10;
         // TODO(关卡1-2)：给 nums[1] 赋值 20
+        nums[1] = 20;
         // TODO(关卡1-3)：给 nums[2] 赋值 30
+        nums[2] = 30;
         //   提示：写法形如  nums[0] = 10;
 
         System.out.println("长度 = " + nums.length);

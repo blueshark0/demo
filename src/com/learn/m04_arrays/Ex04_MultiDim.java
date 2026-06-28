@@ -29,6 +29,7 @@ public class Ex04_MultiDim {
         for (int r = 0; r < matrix.length; r++) {
             for (int c = 0; c < matrix[r].length; c++) {
                 // TODO(关卡4-1)：打印 matrix[r][c] 再跟一个空格（不换行）
+                System.out.print(matrix[r][c] + " ");
                 //   提示：System.out.print(matrix[r][c] + " ");
             }
             System.out.println(); // 每行结束后换行

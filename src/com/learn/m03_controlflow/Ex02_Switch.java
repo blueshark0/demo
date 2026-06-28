@@ -31,7 +31,7 @@ public class Ex02_Switch {
             case 1 -> "周一";
             case 2 -> "周二";
             // TODO(关卡2-1)：把下面的占位文字改成 "周三"
-            case 3 -> "【请改成 周三】";
+            case 3 -> "周三";
             case 4 -> "周四";
             case 5 -> "周五";
             case 6 -> "周六";

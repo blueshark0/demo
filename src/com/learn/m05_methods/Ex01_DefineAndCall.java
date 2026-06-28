@@ -24,8 +24,8 @@ public class Ex01_DefineAndCall {
 
     static void greet() {
         // TODO(关卡1-1)：让本方法打印一行 “大家好，我是方法！”
-        //   提示：用 System.out.println(...)，然后删掉下面这行 throw
-        throw new UnsupportedOperationException("请补全 greet() 方法体");
+        // 提示：用 System.out.println(...)，然后删掉下面这行 throw
+        System.out.println("大家好，我是方法!");
     }
 
     public static void main(String[] args) {

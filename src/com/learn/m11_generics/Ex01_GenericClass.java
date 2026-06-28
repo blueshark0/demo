@@ -24,10 +24,12 @@ public class Ex01_GenericClass {
     public static void main(String[] args) {
         Box<String> strBox = new Box<>();
         // TODO(关卡1-1)：用 set 放入字符串 "你好"
+        strBox.set("你好");
         //   提示：strBox.set("你好");
 
         Box<Integer> intBox = new Box<>();
         // TODO(关卡1-2)：用 set 放入整数 42
+        intBox.set(42);
         //   提示：intBox.set(42);
 
         System.out.println("字符串盒子：" + strBox.get());

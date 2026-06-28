@@ -22,7 +22,7 @@ public class Ex01_BasicEnum {
 
     public static void main(String[] args) {
         // TODO(关卡1-1)：把 null 改成 Weekday.WED
-        Weekday today = null;
+        Weekday today = Weekday.WED;
 
         System.out.println("今天是 " + today);
         System.out.println("是不是周三？ " + (today == Weekday.WED));

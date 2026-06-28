@@ -28,7 +28,7 @@ public class Ex03_MethodReference {
         System.out.println("toUpper(\"hello\") = " + toUpper.apply("hello"));
 
         // TODO(关卡3-1)：把 s -> 0 改成 Integer::parseInt
-        Function<String, Integer> parse = s -> 0;
+        Function<String, Integer> parse = Integer::parseInt;
 
         int n = parse.apply("123");
         System.out.println("parse(\"123\") + 1 = " + (n + 1));

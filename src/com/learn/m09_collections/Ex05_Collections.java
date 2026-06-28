@@ -30,11 +30,12 @@ public class Ex05_Collections {
         Collections.addAll(nums, 3, 1, 4, 1, 5, 9, 2);
 
         // TODO(关卡5-1)：把 0 改成 Collections.max(nums)
-        int max = 0;
+        int max = Collections.max(nums);
         // TODO(关卡5-2)：把 0 改成 Collections.min(nums)
-        int min = 0;
+        int min = Collections.min(nums);
 
         // TODO(关卡5-3)：用 Collections.sort(nums) 给列表排序
+        Collections.sort(nums);
         //   提示：Collections.sort(nums);
 
         System.out.println("最大值 = " + max);
@@ -42,6 +43,7 @@ public class Ex05_Collections {
         System.out.println("排序后 = " + nums);
 
         // TODO(关卡5-4)：用 Collections.reverse(nums) 反转列表
+        Collections.reverse(nums);
         //   提示：Collections.reverse(nums);
 
         System.out.println("反转后 = " + nums);

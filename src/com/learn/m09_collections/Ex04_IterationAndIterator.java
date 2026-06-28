@@ -38,6 +38,9 @@ public class Ex04_IterationAndIterator {
 
         int sum = 0;
         // TODO(关卡4-1)：用增强 for 遍历 nums，把每个数累加到 sum
+        for(int n : nums){
+            sum = sum + n;
+        }
         //   提示：for (int n : nums) sum += n;
 
         System.out.println("总和 = " + sum);
@@ -46,6 +49,9 @@ public class Ex04_IterationAndIterator {
         while (it.hasNext()) {
             int n = it.next();
             // TODO(关卡4-2)：如果 n 是偶数（n % 2 == 0），用 it.remove() 删除它
+            if(n % 2 ==0){
+                it.remove();
+            }
             //   提示：if (n % 2 == 0) it.remove();
         }
 

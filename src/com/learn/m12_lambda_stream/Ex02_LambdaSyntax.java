@@ -30,7 +30,7 @@ public class Ex02_LambdaSyntax {
         String[] words = {"banana", "fig", "apple"};
 
         // TODO(关卡2-1)：把 0 改成 a.length() - b.length()，按长度排序
-        Arrays.sort(words, (a, b) -> 0);
+        Arrays.sort(words, (a, b) -> a.length() - b.length());
 
         System.out.println(Arrays.toString(words));
     }

@@ -25,28 +25,28 @@ public class Ex03_PrimitiveTypes {
     public static void main(String[] args) {
 
         // TODO(关卡3-1)：把 0 改成 100
-        byte b = 0;
+        byte b = 100;
 
         // TODO(关卡3-2)：把 0 改成 20000
-        short s = 0;
+        short s = 20000;
 
         // TODO(关卡3-3)：把 0 改成 100000
-        int i = 0;
+        int i = 100000;
 
         // TODO(关卡3-4)：把 0L 改成 10000000000L（注意结尾的 L）
-        long l = 0L;
+        long l = 10000000000L;
 
         // TODO(关卡3-5)：把 0f 改成 3.14f（注意结尾的 f）
-        float f = 0f;
+        float f = 3.14f;
 
         // TODO(关卡3-6)：把 0 改成 2.718
-        double d = 0;
+        double d = 2.718;
 
         // TODO(关卡3-7)：把空格字符改成大写字母 'A'
-        char c = ' ';
+        char c = 'A';
 
         // TODO(关卡3-8)：把 false 改成 true
-        boolean flag = false;
+        boolean flag = true;
 
         System.out.println("byte: " + b);
         System.out.println("short: " + s);

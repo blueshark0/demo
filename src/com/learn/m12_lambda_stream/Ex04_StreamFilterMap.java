@@ -31,9 +31,9 @@ public class Ex04_StreamFilterMap {
 
         List<Integer> result = nums.stream()
                 // TODO(关卡4-1)：取消注释，保留偶数
-                // .filter(n -> n % 2 == 0)
+                 .filter(n -> n % 2 == 0)
                 // TODO(关卡4-2)：取消注释，把每个数乘 2
-                // .map(n -> n * 2)
+                 .map(n -> n * 2)
                 .collect(Collectors.toList());
 
         System.out.println("偶数翻倍后 = " + result);

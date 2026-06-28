@@ -27,12 +27,12 @@ public class Ex05_TypeCasting {
         int i = 7;
         // TODO(关卡5-1)：把 i 自动转换为 double 赋给 d
         //   提示：double d = i;  （小转大，直接赋值即可）
-        double d = 0;
+        double d = i;
 
         double pi = 3.99;
         // TODO(关卡5-2)：把 pi 强制转换为 int 赋给 truncated
         //   提示：int truncated = (int) pi;  （大转小，要加 (int)）
-        int truncated = 0;
+        int truncated = (int)pi;
 
         System.out.println("int 7 转 double = " + d);
         System.out.println("double 3.99 强制转 int = " + truncated);

@@ -26,7 +26,9 @@ public class Ex01_ClassAndObject {
         Point p = new Point();
 
         // TODO(关卡1-1)：给 p.x 赋值 3
+        p.x = 3;
         // TODO(关卡1-2)：给 p.y 赋值 4
+        p.y = 4;
         //   提示：写法形如  p.x = 3;
 
         System.out.println("点坐标：(" + p.x + ", " + p.y + ")");

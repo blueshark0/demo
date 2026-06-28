@@ -34,7 +34,7 @@ public class Ex02_ReadTextFile {
         Files.write(file, Arrays.asList("apple", "banana", "cherry"));
 
         // TODO(关卡2-1)：把右边改成 Files.readAllLines(file)
-        List<String> lines = Arrays.asList();
+        List<String> lines = Files.readAllLines(file);
 
         System.out.println("共 " + lines.size() + " 行：");
         for (String line : lines) {

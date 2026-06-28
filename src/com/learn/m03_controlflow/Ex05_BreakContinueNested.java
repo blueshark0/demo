@@ -34,7 +34,7 @@ public class Ex05_BreakContinueNested {
         for (int i = 1; i <= 9; i++) {
             for (int j = 1; j <= 9; j++) {
                 // TODO(关卡5-1)：把 false 改成 i * j == 12
-                if (false) {
+                if (i * j == 12) {
                     foundI = i;
                     foundJ = j;
                     break outer; // 找到第一对就跳出两层循环

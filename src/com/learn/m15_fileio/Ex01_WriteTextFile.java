@@ -34,6 +34,7 @@ public class Ex01_WriteTextFile {
         List<String> lines = Arrays.asList("第一行", "第二行", "第三行");
 
         // TODO(关卡1-1)：用 Files.write(file, lines) 把这几行写入文件
+        Files.write(file, lines);
         //   提示：Files.write(file, lines);
 
         System.out.println("已写入文件：" + file);

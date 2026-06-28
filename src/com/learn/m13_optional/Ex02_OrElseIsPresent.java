@@ -28,7 +28,7 @@ public class Ex02_OrElseIsPresent {
         Optional<String> empty = Optional.empty();
 
         // TODO(关卡2-1)：把空串改成 empty.orElse("默认")
-        String v1 = "";
+        String v1 = empty.orElse("默认");
 
         String v2 = present.orElse("默认"); // 有值，返回 "有值"
 

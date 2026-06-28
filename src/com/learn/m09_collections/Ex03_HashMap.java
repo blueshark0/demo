@@ -30,6 +30,8 @@ public class Ex03_HashMap {
         Map<String, Integer> ages = new HashMap<>();
 
         // TODO(关卡3-1)：存入 "小明"->18、"小红"->20
+        ages.put("小明", 18);
+        ages.put("小红", 20);
         //   提示：ages.put("小明", 18); ages.put("小红", 20);
 
         System.out.println("小明的年龄 = " + ages.get("小明"));
@@ -39,6 +41,7 @@ public class Ex03_HashMap {
         Map<String, Integer> count = new HashMap<>();
         for (String w : words) {
             // TODO(关卡3-2)：把单词 w 的次数加 1
+            count.put(w, count.getOrDefault(w,0)+1);
             //   提示：count.put(w, count.getOrDefault(w, 0) + 1);
         }
 

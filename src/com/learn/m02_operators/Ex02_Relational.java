@@ -25,15 +25,15 @@ public class Ex02_Relational {
         int y = 20;
 
         // TODO(关卡2-1)：把 false 改成 x > y
-        boolean gt = false;
+        boolean gt = x > y;
         // TODO(关卡2-2)：把 false 改成 x < y
-        boolean lt = false;
+        boolean lt = x < y;
         // TODO(关卡2-3)：把 false 改成 x == y
-        boolean eq = false;
+        boolean eq = x == y;
         // TODO(关卡2-4)：把 false 改成 x != y
-        boolean ne = false;
+        boolean ne = x != y;
         // TODO(关卡2-5)：把 false 改成 x >= 10
-        boolean ge = false;
+        boolean ge = x >= 10;
 
         System.out.println("10 > 20 ? " + gt);
         System.out.println("10 < 20 ? " + lt);

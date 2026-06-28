@@ -26,15 +26,15 @@ public class Ex01_Arithmetic {
         int b = 5;
 
         // TODO(关卡1-1)：把 0 改成 a + b
-        int sum = 0;
+        int sum = a + b;
         // TODO(关卡1-2)：把 0 改成 a - b
-        int diff = 0;
+        int diff = a - b;
         // TODO(关卡1-3)：把 0 改成 a * b
-        int product = 0;
+        int product = a * b;
         // TODO(关卡1-4)：把 0 改成 a / b（整数除法）
-        int quotient = 0;
+        int quotient = a / b;
         // TODO(关卡1-5)：把 0 改成 a % b（取余）
-        int remainder = 0;
+        int remainder = a % b;
 
         System.out.println("17 + 5 = " + sum);
         System.out.println("17 - 5 = " + diff);

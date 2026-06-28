@@ -34,7 +34,7 @@ public class Ex05_StreamReduceSorted {
         System.out.println();
 
         // TODO(关卡5-1)：把 0 改成 nums.stream().reduce(0, (a, b) -> a + b)
-        int sum = 0;
+        int sum = nums.stream().reduce(0,(a,b) -> a + b);
 
         System.out.println("总和 = " + sum);
     }

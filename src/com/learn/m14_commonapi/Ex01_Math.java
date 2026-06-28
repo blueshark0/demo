@@ -23,13 +23,13 @@ public class Ex01_Math {
 
     public static void main(String[] args) {
         // TODO(关卡1-1)：把 0 改成 Math.abs(-5)
-        int abs = 0;
+        int abs = Math.abs(-5);
         // TODO(关卡1-2)：把 0 改成 Math.max(3, 8)
-        int max = 0;
+        int max = Math.max(3,8);
         // TODO(关卡1-3)：把 0 改成 Math.pow(2, 10)
-        double pow = 0;
+        double pow = Math.pow(2,10);
         // TODO(关卡1-4)：把 0 改成 Math.sqrt(144)
-        double sqrt = 0;
+        double sqrt = Math.sqrt(144);
 
         System.out.println("abs(-5) = " + abs);
         System.out.println("max(3, 8) = " + max);

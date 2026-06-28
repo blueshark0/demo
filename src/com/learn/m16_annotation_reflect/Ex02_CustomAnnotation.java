@@ -38,7 +38,7 @@ public class Ex02_CustomAnnotation {
 
     public static void main(String[] args) {
         // TODO(关卡2-1)：把 null 改成 MyService.class.getAnnotation(Info.class)
-        Info info = null;
+        Info info = MyService.class.getAnnotation(Info.class);
 
         System.out.println("作者 = " + info.author());
         System.out.println("版本 = " + info.version());

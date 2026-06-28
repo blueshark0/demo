@@ -24,6 +24,7 @@ public class Ex03_BoundedType {
         double total = 0;
         for (T n : array) {
             // TODO(关卡3-1)：把 n 转成 double 加到 total
+            total = total + n.doubleValue();
             //   提示：total += n.doubleValue();
         }
         return total;

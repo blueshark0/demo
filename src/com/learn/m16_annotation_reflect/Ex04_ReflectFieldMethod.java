@@ -39,7 +39,7 @@ public class Ex04_ReflectFieldMethod {
 
         Field nameField = clazz.getField("name");
         // TODO(关卡4-1)：把 null 改成 nameField.get(p)
-        Object nameValue = null;
+        Object nameValue = nameField.get(p);
         System.out.println("字段 name = " + nameValue);
 
         Method greetMethod = clazz.getMethod("greet");

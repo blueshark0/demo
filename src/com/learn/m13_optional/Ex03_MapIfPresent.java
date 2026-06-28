@@ -26,7 +26,7 @@ public class Ex03_MapIfPresent {
         Optional<String> name = Optional.of("alice");
 
         // TODO(关卡3-1)：把 s -> s 改成 String::toUpperCase
-        Optional<String> upper = name.map(s -> s);
+        Optional<String> upper = name.map(String::toUpperCase);
 
         // 有值时才打印
         upper.ifPresent(s -> System.out.println("大写名字 = " + s));

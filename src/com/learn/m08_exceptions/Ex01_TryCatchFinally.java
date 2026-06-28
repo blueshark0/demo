@@ -26,7 +26,7 @@ public class Ex01_TryCatchFinally {
 
         try {
             // TODO(关卡1-1)：把 arr[0] 改成 arr[5]，制造下标越界
-            int x = arr[0];
+            int x = arr[5];
             System.out.println("访问成功，x = " + x);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("捕获到异常：下标越界");

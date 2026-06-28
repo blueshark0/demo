@@ -26,10 +26,10 @@ public class Ex02_Variables {
     public static void main(String[] args) {
 
         // TODO(关卡2-1)：把 0 改成 18，让 age 的值为 18
-        int age = 0;
+        int age = 18;
 
         // TODO(关卡2-2)：把空字符串改成 "小明"
-        String name = "";
+        String name = "小明";
 
         // 下面两行负责打印，一般不需要你改动
         System.out.println("姓名：" + name);

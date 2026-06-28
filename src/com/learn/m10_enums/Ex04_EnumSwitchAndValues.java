@@ -27,7 +27,7 @@ public class Ex04_EnumSwitchAndValues {
         }
 
         // TODO(关卡4-1)：把 null 改成 Season.valueOf("SUMMER")
-        Season summer = null;
+        Season summer = Season.valueOf("SUMMER");
 
         String activity = switch (summer) {
             case SPRING -> "踏青";

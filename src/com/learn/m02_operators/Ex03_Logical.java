@@ -26,11 +26,11 @@ public class Ex03_Logical {
         boolean weekend = false; // 今天不是周末
 
         // TODO(关卡3-1)：把 false 改成 sunny && weekend（晴天“且”周末）
-        boolean goOut = false;
+        boolean goOut = sunny && weekend;
         // TODO(关卡3-2)：把 false 改成 sunny || weekend（晴天“或”周末）
-        boolean either = false;
+        boolean either = sunny || weekend;
         // TODO(关卡3-3)：把 false 改成 !sunny（“不是”晴天）
-        boolean notSunny = false;
+        boolean notSunny = !sunny;
 
         System.out.println("晴天且周末，出去玩？ " + goOut);
         System.out.println("晴天或周末，至少满足一个？ " + either);

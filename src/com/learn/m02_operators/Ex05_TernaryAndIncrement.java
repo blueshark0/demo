@@ -27,15 +27,15 @@ public class Ex05_TernaryAndIncrement {
         int b = 5;
 
         // TODO(关卡5-1)：把 0 改成 (a > b ? a : b)，求较大值
-        int max = 0;
+        int max = a > b ? a : b;
 
         int i = 10;
         // TODO(关卡5-2)：把 0 改成 i++（先取值赋给 j，之后 i 自己变 11）
-        int j = 0;
+        int j = i++;
 
         int m = 10;
         // TODO(关卡5-3)：把 0 改成 ++m（m 先变 11，再把 11 赋给 n）
-        int n = 0;
+        int n = ++m;
 
         System.out.println("较大值 = " + max);
         System.out.println("i++ 之后：j = " + j + ", i = " + i);

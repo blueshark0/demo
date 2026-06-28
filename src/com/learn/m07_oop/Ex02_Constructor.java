@@ -36,8 +36,10 @@ class Book {
     // 构造器：名字和类名相同，没有返回类型
     Book(String t, double p) {
         // TODO(关卡2-1)：把参数 t、p 分别赋给字段 title、price
+        title = t;
+        price = p;
         //   提示：title = t;  price = p;  然后删掉下面这行 throw
-        throw new UnsupportedOperationException("请补全 Book 构造器");
+
     }
 
     void show() {

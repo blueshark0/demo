@@ -29,11 +29,11 @@ public class Ex05_Scanner {
 
         System.out.print("请输入你的名字：");
         // TODO(关卡5-1)：把空串改成 scanner.nextLine()
-        String name = "";
+        String name = scanner.nextLine();
 
         System.out.print("请输入你的年龄：");
         // TODO(关卡5-2)：把 0 改成 scanner.nextInt()
-        int age = 0;
+        int age = scanner.nextInt();
 
         System.out.println("你好，" + name + "！你今年 " + age + " 岁。");
         scanner.close();

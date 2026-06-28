@@ -45,8 +45,9 @@ class MyResource implements AutoCloseable {
     @Override
     public void close() {
         // TODO(关卡5-1)：打印 “资源已自动关闭”
+        System.out.println("资源已自动关闭");
         //   提示：System.out.println("资源已自动关闭");
-        throw new UnsupportedOperationException("请补全 close()");
+
     }
 }
 

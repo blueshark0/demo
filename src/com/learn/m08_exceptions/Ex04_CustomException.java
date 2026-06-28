@@ -34,7 +34,7 @@ public class Ex04_CustomException {
     static void register(String name) throws InvalidNameException {
         if (name.length() < 3) {
             // TODO(关卡4-1)：抛出 new InvalidNameException("用户名至少 3 个字符")
-            throw new UnsupportedOperationException("请改成抛出 InvalidNameException");
+            throw new  InvalidNameException("用户名至少3个字符");
         }
         System.out.println("注册成功：" + name);
     }

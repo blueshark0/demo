@@ -27,9 +27,10 @@ public class Ex01_HelloWorld {
 
         // TODO(关卡1-1)：把下面这行改成打印 Hello, World
         //   提示：把双引号里的占位文字换成 Hello, World
-        System.out.println("【请把这行改成 Hello, World】");
+        System.out.println("Hello, World");
 
         // TODO(关卡1-2)：在这一行补一句打印中文 你好，世界
+        System.out.println("你好，世界");
         //   提示：仿照上面，写一行 System.out.println("你好，世界");
 
     }

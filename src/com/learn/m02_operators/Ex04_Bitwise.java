@@ -28,17 +28,17 @@ public class Ex04_Bitwise {
         int b = 3;
 
         // TODO(关卡4-1)：把 0 改成 a & b
-        int and = 0;
+        int and = a & b;
         // TODO(关卡4-2)：把 0 改成 a | b
-        int or = 0;
+        int or = a | b;
         // TODO(关卡4-3)：把 0 改成 a ^ b
-        int xor = 0;
+        int xor = a ^ b;
         // TODO(关卡4-4)：把 0 改成 ~a
-        int not = 0;
+        int not = ~a;
         // TODO(关卡4-5)：把 0 改成 a << 1
-        int shiftLeft = 0;
+        int shiftLeft = a << 1;
         // TODO(关卡4-6)：把 0 改成 a >> 1
-        int shiftRight = 0;
+        int shiftRight = a >> 1;
 
         System.out.println("6 & 3 = " + and);
         System.out.println("6 | 3 = " + or);

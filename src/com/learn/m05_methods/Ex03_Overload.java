@@ -22,12 +22,12 @@ public class Ex03_Overload {
 
     static int add(int a, int b) {
         // TODO(关卡3-1)：返回两个 int 的和
-        throw new UnsupportedOperationException("请补全 int 版 add()");
+        return a + b;
     }
 
     static double add(double a, double b) {
         // TODO(关卡3-2)：返回两个 double 的和
-        throw new UnsupportedOperationException("请补全 double 版 add()");
+        return a + b;
     }
 
     public static void main(String[] args) {

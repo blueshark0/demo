@@ -26,7 +26,7 @@ public class Ex03_EnumMethods {
 
     public static void main(String[] args) {
         // TODO(关卡3-1)：把 null 改成 Operation.PLUS
-        Operation op = null;
+        Operation op = Operation.PLUS;
 
         System.out.println("3 PLUS 4 = " + op.apply(3, 4));
         System.out.println("3 TIMES 4 = " + Operation.TIMES.apply(3, 4));
