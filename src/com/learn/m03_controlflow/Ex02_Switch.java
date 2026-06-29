@@ -6,20 +6,15 @@ package com.learn.m03_controlflow;
  * 关卡：Ex02 switch 多值匹配
  * ------------------------------------------------------------
  * 【知识点】
- *   当要根据“一个变量的不同取值”做不同处理时，switch 比一堆 if 更清晰。
- *   Java 较新的“箭头写法”很直观（不需要写 break）：
- *       String s = switch (x) {
- *           case 1 -> "一";
- *           case 2 -> "二";
- *           default -> "其它";
- *       };
+ *   当要根据“一个变量的不同取值”做不同处理时，switch 比一连串 if
+ *   更清晰。Java 较新的“箭头写法”很直观：每个取值对应一个结果，
+ *   不需要手写 break；还能用 default 分支兜底，处理列举之外的情况。
  *
  * 【本关任务】
- *   把 day（1~7）映射成中文星期。这里 day = 3，请把 case 3 的占位
- *   文字改成正确的 "周三"。
- *
- * 【如何闯关】
- *   修改 TODO 处的字符串，运行对照输出。
+ *   把 day（1~7）映射成中文星期，并打印「第 3 天是 周三」。这里
+ *   day = 3（这个值不要改）。请把 switch 写完整：补上 day 等于 3 时
+ *   应得到的结果，以及其余各天（周一、周二、周四、周五、周六、周日）
+ *   和兜底的 default 分支「无效」。
  * ============================================================
  */
 public class Ex02_Switch {
@@ -27,17 +22,10 @@ public class Ex02_Switch {
     public static void main(String[] args) {
         int day = 3;
 
-        String name = switch (day) {
-            case 1 -> "周一";
-            case 2 -> "周二";
-            // TODO(关卡2-1)：把下面的占位文字改成 "周三"
-            case 3 -> "周三";
-            case 4 -> "周四";
-            case 5 -> "周五";
-            case 6 -> "周六";
-            case 7 -> "周日";
-            default -> "无效";
-        };
+        // TODO(关卡2-1)：用箭头写法的 switch，按 day 的取值得到对应中文星期，
+        //               并把结果赋给下面的 name；day=3 时结果应为「周三」，
+        //               列举之外的取值用 default 返回「无效」。
+        String name = "无效";
 
         System.out.println("第 " + day + " 天是 " + name);
     }
@@ -50,5 +38,5 @@ public class Ex02_Switch {
  *
  * 排查提示：
  *  - default 分支用于兜底：如果 day 不在 1~7，就会返回“无效”。
- *  - 试着把 day 改成 8 再运行，看看会输出什么。
+ *  - 写好之后，试着把 day 改成 8 再运行，看看会输出什么。
  */

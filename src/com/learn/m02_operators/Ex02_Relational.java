@@ -9,13 +9,22 @@ package com.learn.m02_operators;
  *   关系运算符用来比较两个值，结果一定是布尔值 true 或 false：
  *       >  大于    <  小于    >= 大于等于   <= 小于等于
  *       == 等于    != 不等于
- *   注意：判断“相等”是两个等号 ==，一个等号 = 是“赋值”。
+ *   注意：判断“相等”用两个等号，一个等号是“赋值”，含义完全不同。
  *
  * 【本关任务】
- *   用 x、y 写出 5 个比较表达式。
- *
- * 【如何闯关】
- *   把每个占位 false 改成 TODO 要求的比较表达式，运行对照输出。
+ *   下方已给定 x = 10、y = 20（必须用这两个固定值）。
+ *   请写出 5 个比较表达式，分别赋给 gt、lt、eq、ne、ge：
+ *     - gt：x 是否大于 y
+ *     - lt：x 是否小于 y
+ *     - eq：x 是否等于 y
+ *     - ne：x 是否不等于 y
+ *     - ge：x 是否大于等于 10
+ *   使程序打印出：
+ *       10 > 20 ? false
+ *       10 < 20 ? true
+ *       10 == 20 ? false
+ *       10 != 20 ? true
+ *       10 >= 10 ? true
  * ============================================================
  */
 public class Ex02_Relational {
@@ -24,16 +33,16 @@ public class Ex02_Relational {
         int x = 10;
         int y = 20;
 
-        // TODO(关卡2-1)：把 false 改成 x > y
-        boolean gt = x > y;
-        // TODO(关卡2-2)：把 false 改成 x < y
-        boolean lt = x < y;
-        // TODO(关卡2-3)：把 false 改成 x == y
-        boolean eq = x == y;
-        // TODO(关卡2-4)：把 false 改成 x != y
-        boolean ne = x != y;
-        // TODO(关卡2-5)：把 false 改成 x >= 10
-        boolean ge = x >= 10;
+        // TODO(关卡2-1)：判断 x 是否大于 y，结果赋给 gt
+        boolean gt = false;
+        // TODO(关卡2-2)：判断 x 是否小于 y，结果赋给 lt
+        boolean lt = false;
+        // TODO(关卡2-3)：判断 x 是否等于 y，结果赋给 eq
+        boolean eq = false;
+        // TODO(关卡2-4)：判断 x 是否不等于 y，结果赋给 ne
+        boolean ne = false;
+        // TODO(关卡2-5)：判断 x 是否大于等于 10，结果赋给 ge
+        boolean ge = false;
 
         System.out.println("10 > 20 ? " + gt);
         System.out.println("10 < 20 ? " + lt);
@@ -53,5 +62,5 @@ public class Ex02_Relational {
  * ===============================================================
  *
  * 排查提示：
- *  - 判断相等用 ==（两个等号），千万别写成 =（那是赋值）。
+ *  - 判断相等要用两个等号，别写成一个等号（那是赋值）。
  */

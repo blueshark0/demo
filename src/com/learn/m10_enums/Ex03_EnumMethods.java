@@ -6,27 +6,24 @@ package com.learn.m10_enums;
  * 关卡：Ex03 枚举的方法（每个常量各自实现）
  * ------------------------------------------------------------
  * 【知识点】
- *   枚举可以声明一个“抽象方法”，然后每个常量给出自己的实现。这样不同
- *   常量就有了不同的行为：
- *       enum Operation {
- *           PLUS  { public int apply(int a, int b) { return a + b; } },
- *           TIMES { public int apply(int a, int b) { return a * b; } };
- *           public abstract int apply(int a, int b);
- *       }
- *   于是 Operation.PLUS.apply(3, 4) = 7，Operation.TIMES.apply(3, 4) = 12。
+ *   枚举里可以声明一个“抽象方法”，强制每个常量都给出自己的实现。这样
+ *   不同的常量就拥有了各自不同的行为：调用同名方法，结果却因常量而异。
+ *   实现的写法是在每个常量名后面跟一对花括号，在里面重写那个抽象方法。
+ *   这让枚举既是一组取值，又能像“一族小策略”那样各自工作。
  *
  * 【本关任务】
- *   把 op 赋值为 Operation.PLUS，再用它做一次运算。
- *
- * 【如何闯关】
- *   把 null 改成 Operation.PLUS，运行对照输出。
+ *   下方枚举 Operation 声明了抽象方法 apply(int, int)，并要求每个常量
+ *   各自实现它：PLUS 表示加法、TIMES 表示乘法。请补全这两个常量的实现，
+ *   并把变量 op 赋值为 PLUS，使程序打印：
+ *       3 PLUS 4 = 7
+ *       3 TIMES 4 = 12
  * ============================================================
  */
 public class Ex03_EnumMethods {
 
     public static void main(String[] args) {
-        // TODO(关卡3-1)：把 null 改成 Operation.PLUS
-        Operation op = Operation.PLUS;
+        // TODO(关卡3-1)：把 op 赋值为表示“加法”的枚举常量，使下面打印「3 PLUS 4 = 7」
+        Operation op = null;
 
         System.out.println("3 PLUS 4 = " + op.apply(3, 4));
         System.out.println("3 TIMES 4 = " + Operation.TIMES.apply(3, 4));
@@ -36,12 +33,14 @@ public class Ex03_EnumMethods {
 enum Operation {
     PLUS {
         public int apply(int a, int b) {
-            return a + b;
+            // TODO(关卡3-2)：实现“加法”，返回 a 与 b 相加的结果
+            throw new UnsupportedOperationException("请补全：PLUS 的 apply 应返回 a 加 b");
         }
     },
     TIMES {
         public int apply(int a, int b) {
-            return a * b;
+            // TODO(关卡3-3)：实现“乘法”，返回 a 与 b 相乘的结果
+            throw new UnsupportedOperationException("请补全：TIMES 的 apply 应返回 a 乘 b");
         }
     };
 

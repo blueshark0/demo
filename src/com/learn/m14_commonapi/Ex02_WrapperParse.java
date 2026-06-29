@@ -7,26 +7,26 @@ package com.learn.m14_commonapi;
  * ------------------------------------------------------------
  * 【知识点】
  *   每个基本类型都有对应的“包装类”：int→Integer，double→Double……
- *   常用功能：
- *       Integer.parseInt("100")     把字符串解析成 int
- *       Double.parseDouble("3.14")  把字符串解析成 double
- *       Integer.MAX_VALUE           int 能表示的最大值
- *   自动装箱/拆箱：int 和 Integer 之间会自动转换，写起来很自然。
+ *   包装类提供了一些实用功能，比如把字符串解析（转换）成对应的数字
+ *   类型，又比如用常量给出该类型能表示的最大值/最小值。此外，int 和
+ *   Integer 之间能自动相互转换（自动装箱/拆箱），写起来很自然。
  *
  * 【本关任务】
- *   把字符串 "100" 解析成 int，把 "3.14" 解析成 double。
- *
- * 【如何闯关】
- *   按 TODO 把占位 0 改成对应的解析调用，运行对照输出。
+ *   把字符串 "100" 解析成 int 赋给 n，把字符串 "3.14" 解析成 double
+ *   赋给 d，使下方打印的输出为：
+ *       parseInt("100") = 100
+ *       parseDouble("3.14") = 3.14
+ *       装箱再拆箱 = 42
+ *       int 最大值 = 2147483647
  * ============================================================
  */
 public class Ex02_WrapperParse {
 
     public static void main(String[] args) {
-        // TODO(关卡2-1)：把 0 改成 Integer.parseInt("100")
-        int n = Integer.parseInt("100");
-        // TODO(关卡2-2)：把 0 改成 Double.parseDouble("3.14")
-        double d = Double.parseDouble("3.14");
+        // TODO(关卡2-1)：把字符串 "100" 解析成 int，赋给 n（应为 100）
+        int n = 0;
+        // TODO(关卡2-2)：把字符串 "3.14" 解析成 double，赋给 d（应为 3.14）
+        double d = 0;
 
         Integer boxed = 42;   // 自动装箱：int 42 变成 Integer 对象
         int unboxed = boxed;  // 自动拆箱：Integer 变回 int

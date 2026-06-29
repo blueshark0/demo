@@ -12,15 +12,19 @@ import java.util.List;
  * 关卡：Ex02 读取文本文件
  * ------------------------------------------------------------
  * 【知识点】
- *   Files.readAllLines 一次性把文件的所有行读成一个 List<String>：
- *       List<String> lines = Files.readAllLines(file);
- *   适合文件不太大的场景，简单直接。
+ *   有一种最直接的读法：一次性把整个文件的所有行读出来，结果是一个
+ *   List<String>（每个元素是文件中的一行）。它简单直接，适合文件不太
+ *   大的场景；文件较大时这样一次全读进内存就不划算了。
+ *   读文件可能出错，属于受检异常，所以 main 声明了 throws IOException。
  *
  * 【本关任务】
- *   读取 read_demo.txt 的所有行（文件已在程序里替你准备好）。
- *
- * 【如何闯关】
- *   把 lines 改成 Files.readAllLines(file)，运行对照输出。
+ *   程序已替你准备好待读文件 file（路径 .../data/read_demo.txt，内容为
+ *   三行：apple、banana、cherry）。请一次性读取 file 的所有行，把结果
+ *   赋给 lines，使程序打印出：
+ *       共 3 行：
+ *         apple
+ *         banana
+ *         cherry
  * ============================================================
  */
 public class Ex02_ReadTextFile {
@@ -33,8 +37,8 @@ public class Ex02_ReadTextFile {
         // 先准备一个文件供读取
         Files.write(file, Arrays.asList("apple", "banana", "cherry"));
 
-        // TODO(关卡2-1)：把右边改成 Files.readAllLines(file)
-        List<String> lines = Files.readAllLines(file);
+        // TODO(关卡2-1)：一次性读取 file 的所有行，赋给 lines（替换下面的空列表占位）
+        List<String> lines = List.of();
 
         System.out.println("共 " + lines.size() + " 行：");
         for (String line : lines) {

@@ -8,18 +8,15 @@ import java.util.Scanner;
  * 关卡：Ex05 控制台输入 Scanner
  * ------------------------------------------------------------
  * 【知识点】
- *   Scanner 从控制台读取用户输入：
- *       Scanner sc = new Scanner(System.in);
- *       String s = sc.nextLine();  读取一整行（字符串）
- *       int n = sc.nextInt();      读取一个整数
- *   用完记得 sc.close()。
+ *   Scanner 可以从控制台读取用户输入。它能整行整行地读取文字（得到一个
+ *   字符串），也能直接读取一个整数。用 System.in 把它接到键盘输入上，
+ *   用完之后记得把它关闭，释放资源。
  *
  * 【本关任务】
- *   读取用户输入的名字（一行）和年龄（整数），再打印问候语。
- *
- * 【如何闯关】
- *   补全两处读取语句，运行后“在控制台手动输入”，对照下面的示例。
- *   （在 IDEA 里：运行后点底部控制台，输入内容并回车。）
+ *   下方已创建好 scanner、打印好两句提示语（请保留这些既定形式）。
+ *   读取用户输入的名字（一整行）赋给 name，读取用户输入的年龄（一个
+ *   整数）赋给 age，再打印问候语。运行后需要“在控制台手动输入”：
+ *   依次输入名字（回车）和年龄（回车），即可看到问候语。
  * ============================================================
  */
 public class Ex05_Scanner {
@@ -28,12 +25,12 @@ public class Ex05_Scanner {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("请输入你的名字：");
-        // TODO(关卡5-1)：把空串改成 scanner.nextLine()
-        String name = scanner.nextLine();
+        // TODO(关卡5-1)：从 scanner 读取一整行作为名字，赋给 name
+        String name = "";
 
         System.out.print("请输入你的年龄：");
-        // TODO(关卡5-2)：把 0 改成 scanner.nextInt()
-        int age = scanner.nextInt();
+        // TODO(关卡5-2)：从 scanner 读取一个整数作为年龄，赋给 age
+        int age = 0;
 
         System.out.println("你好，" + name + "！你今年 " + age + " 岁。");
         scanner.close();

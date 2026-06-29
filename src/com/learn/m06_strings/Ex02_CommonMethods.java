@@ -8,19 +8,26 @@ import java.util.Arrays;
  * 关卡：Ex02 常用方法
  * ------------------------------------------------------------
  * 【知识点】
- *   字符串自带很多方法（用 . 调用）：
- *       s.length()        长度
- *       s.charAt(i)       第 i 个字符（下标从 0 开始）
- *       s.substring(i)    从第 i 个字符开始到末尾的子串
- *       s.indexOf("x")    子串第一次出现的下标，找不到返回 -1
- *       s.toUpperCase()   转大写
- *       s.split(",")      按逗号切分成字符串数组
+ *   字符串自带很多“方法”，用点号调用。常见的能力有：
+ *     - 求字符串的长度（一共有多少个字符）；
+ *     - 取出某个下标位置上的单个字符（下标从 0 开始数）；
+ *     - 从某个下标开始一直截到末尾，得到一段子串；
+ *     - 查某段文字第一次出现在哪个下标，找不到时返回 -1；
+ *     - 把字符串整体转成大写；
+ *     - 按某个分隔符把字符串切分成一个字符串数组。
  *
  * 【本关任务】
- *   对字符串 "Hello, Java" 调用上述方法，填出各结果。
- *
- * 【如何闯关】
- *   把每个占位值改成正确的方法调用，运行对照输出。
+ *   下方已给定 s = "Hello, Java"、csv = "a,b,c"
+ *   （必须用这两个固定值，输出才能对上）。请利用上面提到的能力，
+ *   分别求出各结果并赋给已声明的变量，使程序打印：
+ *       长度 = 11
+ *       首字符 = H
+ *       子串(从下标7起) = Java
+ *       "Java" 的位置 = 7
+ *       转大写 = HELLO, JAVA
+ *       分割后第二个 = b
+ *   提示：「子串(从下标7起)」要从下标 7 截到末尾；
+ *         「分割后第二个」是 csv 按逗号切分后的第 2 段。
  * ============================================================
  */
 public class Ex02_CommonMethods {
@@ -28,20 +35,20 @@ public class Ex02_CommonMethods {
     public static void main(String[] args) {
         String s = "Hello, Java";
 
-        // TODO(关卡2-1)：把 0 改成 s.length()
-        int len = s.length();
-        // TODO(关卡2-2)：把空格改成 s.charAt(0)
-        char first = s.charAt(0);
-        // TODO(关卡2-3)：把空串改成 s.substring(7)
-        String sub = s.substring(7);
-        // TODO(关卡2-4)：把 0 改成 s.indexOf("Java")
-        int idx = s.indexOf("Java");
-        // TODO(关卡2-5)：把空串改成 s.toUpperCase()
-        String upper = s.toUpperCase();
+        // TODO(关卡2-1)：求 s 的长度，赋给 len
+        int len = 0;
+        // TODO(关卡2-2)：取 s 的首字符（下标 0），赋给 first
+        char first = ' ';
+        // TODO(关卡2-3)：取 s 从下标 7 到末尾的子串，赋给 sub
+        String sub = "";
+        // TODO(关卡2-4)：求 "Java" 在 s 中第一次出现的下标，赋给 idx
+        int idx = 0;
+        // TODO(关卡2-5)：把 s 整体转成大写，赋给 upper
+        String upper = "";
 
         String csv = "a,b,c";
-        // TODO(关卡2-6)：把右边改成 csv.split(",")
-        String[] parts = csv.split(",");
+        // TODO(关卡2-6)：把 csv 按逗号切分成字符串数组，赋给 parts
+        String[] parts = new String[]{"", "", ""};
 
         System.out.println("长度 = " + len);
         System.out.println("首字符 = " + first);

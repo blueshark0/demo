@@ -15,12 +15,14 @@ import java.util.Objects;
  *   重写时在方法上方写 @Override，让编译器帮你检查写对没。
  *
  * 【本关任务】
- *   1. 重写 toString()，返回形如 "Person{name=小明, age=18}"。
- *   2. 重写 equals()，当 name 和 age 都相同时返回 true。
+ *   1. 重写 toString()，返回形如 "Person{name=小明, age=18}" 的字符串。
+ *   2. 重写 equals()，当对方也是 Person、且 name 与 age 都相同时返回 true，
+ *      否则返回 false。
  *   （hashCode 已替你写好，不用改。）
- *
- * 【如何闯关】
- *   把 toString、equals 里的 throw 替换成正确实现，运行对照输出。
+ *   使程序打印：
+ *       Person{name=小明, age=18}
+ *       p1.equals(p2) ? true
+ *       p1.equals(p3) ? false
  * ============================================================
  */
 public class Ex06_ObjectMethods {
@@ -47,17 +49,15 @@ class Person {
 
     @Override
     public String toString() {
-        // TODO(关卡6-1)：返回 "Person{name=" + name + ", age=" + age + "}"
-        return "Person{name=" + name + ", age=" + age + "}";
+        // TODO(关卡6-1)：拼出并返回形如 "Person{name=小明, age=18}" 的字符串
+        throw new UnsupportedOperationException("请补全：返回形如 Person{name=..., age=...} 的字符串");
     }
 
     @Override
     public boolean equals(Object o) {
-        // TODO(关卡6-2)：当 o 也是 Person，且 name、age 都相同时返回 true
-             if (this == o) return true;
-             if (!(o instanceof Person)) return false;
-             Person other = (Person) o;
-             return age == other.age && name.equals(other.name);
+        // TODO(关卡6-2)：当 o 也是 Person，且 name、age 都相同时返回 true，否则返回 false
+        //   （先判断 o 是不是 Person，再把它转成 Person 比较两个字段）
+        throw new UnsupportedOperationException("请补全：name 与 age 都相同时返回 true");
     }
 
     @Override

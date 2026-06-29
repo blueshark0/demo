@@ -6,30 +6,30 @@ package com.learn.m14_commonapi;
  * 关卡：Ex01 Math 数学工具
  * ------------------------------------------------------------
  * 【知识点】
- *   Math 提供常用数学方法（都是静态方法，直接 Math.xxx 调用）：
- *       Math.abs(-5)     绝对值          → 5
- *       Math.max(3, 8)   较大值          → 8
- *       Math.pow(2, 10)  幂（2 的 10 次方）→ 1024.0（注意返回 double）
- *       Math.sqrt(144)   平方根          → 12.0
+ *   Math 是一个工具类，提供常用数学运算，方法都是静态的，可以直接用
+ *   类名调用，不需要先创建对象。常见的功能包括：求一个数的绝对值、
+ *   比较两个数取较大值、做幂运算（一个数的若干次方）、以及开平方根。
+ *   要留意返回类型：幂运算和平方根返回的是 double（带小数点）。
  *
  * 【本关任务】
- *   用 Math 的方法填出四个结果。
- *
- * 【如何闯关】
- *   把每个占位 0 改成对应的 Math 调用，运行对照输出。
+ *   用 Math 的方法算出四个结果并交给下方打印，使输出为：
+ *       abs(-5) = 5
+ *       max(3, 8) = 8
+ *       pow(2, 10) = 1024.0
+ *       sqrt(144) = 12.0
  * ============================================================
  */
 public class Ex01_Math {
 
     public static void main(String[] args) {
-        // TODO(关卡1-1)：把 0 改成 Math.abs(-5)
-        int abs = Math.abs(-5);
-        // TODO(关卡1-2)：把 0 改成 Math.max(3, 8)
-        int max = Math.max(3,8);
-        // TODO(关卡1-3)：把 0 改成 Math.pow(2, 10)
-        double pow = Math.pow(2,10);
-        // TODO(关卡1-4)：把 0 改成 Math.sqrt(144)
-        double sqrt = Math.sqrt(144);
+        // TODO(关卡1-1)：求 -5 的绝对值，结果赋给 abs（应为 5）
+        int abs = 0;
+        // TODO(关卡1-2)：求 3 和 8 中的较大值，结果赋给 max（应为 8）
+        int max = 0;
+        // TODO(关卡1-3)：求 2 的 10 次方，结果赋给 pow（应为 1024.0）
+        double pow = 0;
+        // TODO(关卡1-4)：求 144 的平方根，结果赋给 sqrt（应为 12.0）
+        double sqrt = 0;
 
         System.out.println("abs(-5) = " + abs);
         System.out.println("max(3, 8) = " + max);

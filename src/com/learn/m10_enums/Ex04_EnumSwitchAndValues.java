@@ -6,16 +6,24 @@ package com.learn.m10_enums;
  * 关卡：Ex04 switch 与 values / valueOf / ordinal
  * ------------------------------------------------------------
  * 【知识点】
- *   values()  返回包含所有枚举常量的数组，可用来遍历。
- *   ordinal() 返回常量的序号（从 0 开始，按定义顺序）。
- *   valueOf("名字") 根据字符串名字得到对应的枚举常量。
- *   switch 可以直接对枚举做分支，case 后只写常量名（不加类型前缀）。
+ *   枚举自带几个好用的能力：一个方法能返回包含全部常量的数组，常用来
+ *   遍历；每个常量还有一个“序号”，从 0 开始、按定义顺序编号；另有一个
+ *   方法能根据字符串名字找到对应的常量。此外，switch 可以直接对枚举做
+ *   分支判断，case 后面只写常量名本身，不需要加类型前缀。
  *
  * 【本关任务】
- *   用 Season.valueOf("SUMMER") 得到 summer，再用 switch 查它适合的活动。
- *
- * 【如何闯关】
- *   把 null 改成 Season.valueOf("SUMMER")，运行对照输出。
+ *   下方已写好枚举 Season（SPRING/SUMMER/AUTUMN/WINTER）和遍历打印序号的
+ *   代码。请：
+ *   1. 用“按名字查找常量”的方式，把名字 "SUMMER" 转成对应常量赋给 summer。
+ *   2. 用 switch 根据 summer 选出活动并赋给 activity：
+ *      SPRING→"踏青"、SUMMER→"游泳"、AUTUMN→"赏枫"、WINTER→"滑雪"。
+ *   使程序打印（含上方遍历部分）：
+ *       所有季节：
+ *         0 -> SPRING
+ *         1 -> SUMMER
+ *         2 -> AUTUMN
+ *         3 -> WINTER
+ *       夏天适合：游泳
  * ============================================================
  */
 public class Ex04_EnumSwitchAndValues {
@@ -26,15 +34,13 @@ public class Ex04_EnumSwitchAndValues {
             System.out.println("  " + s.ordinal() + " -> " + s);
         }
 
-        // TODO(关卡4-1)：把 null 改成 Season.valueOf("SUMMER")
-        Season summer = Season.valueOf("SUMMER");
+        // TODO(关卡4-1)：用“按名字查找常量”的方式，把名字 "SUMMER" 转成对应常量赋给 summer
+        Season summer = null;
 
-        String activity = switch (summer) {
-            case SPRING -> "踏青";
-            case SUMMER -> "游泳";
-            case AUTUMN -> "赏枫";
-            case WINTER -> "滑雪";
-        };
+        // TODO(关卡4-2)：用 switch 根据 summer 选出活动赋给 activity
+        //               SPRING→"踏青"、SUMMER→"游泳"、AUTUMN→"赏枫"、WINTER→"滑雪"
+        String activity = null;
+
         System.out.println("夏天适合：" + activity);
     }
 }

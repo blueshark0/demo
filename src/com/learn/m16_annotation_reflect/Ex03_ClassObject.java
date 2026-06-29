@@ -6,35 +6,26 @@ package com.learn.m16_annotation_reflect;
  * 关卡：Ex03 获取 Class 对象
  * ------------------------------------------------------------
  * 【知识点】
- *   每个类在运行时都有一个对应的 Class 对象，描述这个类的信息。获取方式：
- *       1) 类名.class            如 String.class
- *       2) 对象.getClass()       如 "hi".getClass()
- *       3) Class.forName("全限定名")
- *   常用方法：getName() 全限定名（含包），getSimpleName() 简单名（不含包）。
+ *   每个类在运行时都有一个对应的 Class 对象，用来描述这个类的信息。
+ *   获取它通常有三种途径：用“类名”直接取、用某个对象问它自己，
+ *   或用 Class.forName(全限定名) 按名字找。Class 对象上有两个常用
+ *   方法：一个返回带包名的“全限定名”，另一个只返回不含包名的“简单名”。
  *
  * 【本关任务】
- *   用 c2.getSimpleName() 取得字符串对象的简单类名。
- *
- * 【如何闯关】
- *   把 simple 的空串改成 c2.getSimpleName()，运行对照输出。
+ *   1. 拿到 String 类的 Class 对象，打印它的全限定名与简单名，
+ *      目标：「c1 全名 = java.lang.String」「c1 简单名 = String」。
+ *   2. 通过字符串对象 "hello" 拿到它的 Class 对象，打印它的简单名，
+ *      目标：「c2 简单名 = String」。
  * ============================================================
  */
 public class Ex03_ClassObject {
 
     public static void main(String[] args) {
-        // 方式 1：类名.class
-        Class<String> c1 = String.class;
+        // TODO(关卡3-1)：拿到 String 类的 Class 对象，打印它的全限定名和简单名
+        //               目标：「c1 全名 = java.lang.String」「c1 简单名 = String」
 
-        // 方式 2：对象.getClass()
-        String s = "hello";
-        Class<? extends String> c2 = s.getClass();
-
-        System.out.println("c1 全名 = " + c1.getName());
-        System.out.println("c1 简单名 = " + c1.getSimpleName());
-
-        // TODO(关卡3-1)：把空串改成 c2.getSimpleName()
-        String simple = c2.getSimpleName();
-        System.out.println("c2 简单名 = " + simple);
+        // TODO(关卡3-2)：通过字符串对象 "hello" 拿到它的 Class 对象，打印简单名
+        //               目标：「c2 简单名 = String」
     }
 }
 
@@ -46,6 +37,6 @@ public class Ex03_ClassObject {
  * ===============================================================
  *
  * 排查提示：
- *  - getName 带包名（java.lang.String），getSimpleName 只有类名（String）。
- *  - c1 和 c2 指向的是同一个 Class 对象（都是 String 的），所以简单名相同。
+ *  - 全限定名带包名（java.lang.String），简单名只有类名（String）。
+ *  - "hello" 对象的类就是 String，所以它的简单名也是 String。
  */

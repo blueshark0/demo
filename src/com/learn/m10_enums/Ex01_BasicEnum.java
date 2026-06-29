@@ -6,23 +6,23 @@ package com.learn.m10_enums;
  * 关卡：Ex01 基本枚举
  * ------------------------------------------------------------
  * 【知识点】
- *   枚举用 enum 定义，把所有可能的取值一一列出：
- *       enum Weekday { MON, TUE, WED, THU, FRI, SAT, SUN }
- *   用法： Weekday d = Weekday.WED;
- *   枚举值用 == 比较即可（它们是唯一的常量）。
+ *   枚举用 enum 关键字定义，它把某个类型“所有可能的取值”一一列举出来，
+ *   每个取值都是一个唯一的常量。声明一个枚举类型的变量后，可以让它指向
+ *   其中某个常量。由于枚举常量是唯一的，比较两个枚举值用 == 即可。
+ *   打印枚举常量时，默认显示的是它的名字。
  *
  * 【本关任务】
- *   把 today 赋值为 Weekday.WED（周三）。
- *
- * 【如何闯关】
- *   把 null 改成 Weekday.WED，运行对照输出。
+ *   下方已写好枚举 Weekday（含 MON..SUN 七个常量）。
+ *   把变量 today 赋值为表示“周三”的那个常量，使程序打印：
+ *       今天是 WED
+ *       是不是周三？ true
  * ============================================================
  */
 public class Ex01_BasicEnum {
 
     public static void main(String[] args) {
-        // TODO(关卡1-1)：把 null 改成 Weekday.WED
-        Weekday today = Weekday.WED;
+        // TODO(关卡1-1)：把 today 赋值为表示“周三”的枚举常量，使下面打印「今天是 WED」
+        Weekday today = null;
 
         System.out.println("今天是 " + today);
         System.out.println("是不是周三？ " + (today == Weekday.WED));

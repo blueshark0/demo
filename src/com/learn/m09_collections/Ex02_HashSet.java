@@ -9,17 +9,17 @@ import java.util.Set;
  * 关卡：Ex02 HashSet 集合
  * ------------------------------------------------------------
  * 【知识点】
- *   Set 是“无序、不重复”的集合：往里加重复元素会被自动忽略。
- *       Set<String> set = new HashSet<>();
- *       set.add("a");           添加
- *       set.contains("a");      是否包含
- *       set.size();             元素个数（重复的只算一个）
+ *   Set 是“无序、不重复”的集合：往里加重复元素会被自动忽略，
+ *   所以重复的值只会保留一个。HashSet 是 Set 最常用的实现，
+ *   它不保证元素的先后顺序。Set 同样支持添加元素、判断是否
+ *   包含某个元素、查询元素个数等操作。
  *
  * 【本关任务】
- *   依次添加 "a"、"b"、"a"（注意第三个是重复的 "a"）。
- *
- * 【如何闯关】
- *   按 TODO 补全三次 add 调用，运行对照输出，观察重复元素被去掉。
+ *   下方已为你创建好空集合 set。请依次往 set 添加 "a"、"b"、"a"
+ *   （注意第三个是重复的 "a"）。补全后程序应打印：
+ *       集合大小 = 2
+ *       包含 a？ true
+ *       包含 c？ false
  * ============================================================
  */
 public class Ex02_HashSet {
@@ -27,9 +27,8 @@ public class Ex02_HashSet {
     public static void main(String[] args) {
         Set<String> set = new HashSet<>();
 
-        // TODO(关卡2-1)：依次添加 "a"、"b"、"a"
-        set.add("a"); set.add("b"); set.add("a");
-        //   提示：set.add("a"); set.add("b"); set.add("a");
+        // TODO(关卡2-1)：依次往 set 添加 "a"、"b"、"a"（第三个是重复的 "a"）
+
 
         System.out.println("集合大小 = " + set.size()); // 重复的 a 只算一次
         System.out.println("包含 a？ " + set.contains("a"));

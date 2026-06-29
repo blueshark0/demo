@@ -12,19 +12,19 @@ import java.util.Arrays;
  * 关卡：Ex03 Path 与逐行读取
  * ------------------------------------------------------------
  * 【知识点】
- *   Files.exists(path) 判断文件是否存在。
- *   逐行读取大文件更省内存，用 BufferedReader 配合 try-with-resources：
- *       try (BufferedReader r = Files.newBufferedReader(file)) {
- *           String line;
- *           while ((line = r.readLine()) != null) { ... }
- *       }
- *   readLine() 每次读一行，读到文件末尾时返回 null。
+ *   逐行读取文件比“一次全读进内存”更省内存，适合大文件：程序里已用
+ *   try-with-resources 打开了一个 BufferedReader（这种写法会在读完后
+ *   自动关闭它，不必手动 close）。BufferedReader 能一行一行地往下读，
+ *   每读一行返回该行内容，读到文件末尾时返回 null —— while 循环正是
+ *   靠这个“是否为 null”来判断要不要继续读。
  *
  * 【本关任务】
- *   在 while 循环里把读到的每一行打印成 "读到：xxx"。
- *
- * 【如何闯关】
- *   在循环体里补一行打印语句，运行对照输出。
+ *   程序已逐行读出文件 file（内容为两行：line1、line2），循环里的变量
+ *   line 就是当前读到的一行。请在循环体里把每一行打印成 "读到：" 加上
+ *   该行内容，使程序打印出：
+ *       文件存在？ true
+ *       读到：line1
+ *       读到：line2
  * ============================================================
  */
 public class Ex03_FilesPath {
@@ -40,9 +40,8 @@ public class Ex03_FilesPath {
         try (BufferedReader reader = Files.newBufferedReader(file)) {
             String line;
             while ((line = reader.readLine()) != null) {
-                // TODO(关卡3-1)：打印 "读到：" + line
-                System.out.println("读到：" + line);
-                //   提示：System.out.println("读到：" + line);
+                // TODO(关卡3-1)：把当前这一行打印成 "读到：" 加上该行内容
+
             }
         }
     }

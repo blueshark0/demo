@@ -6,25 +6,21 @@ package com.learn.m05_methods;
  * 关卡：Ex02 参数与返回值
  * ------------------------------------------------------------
  * 【知识点】
- *   方法可以接收“参数”（输入），并通过 return “返回”一个结果（输出）：
- *       static int add(int a, int b) {
- *           return a + b;   // 把 a+b 的结果返回给调用者
- *       }
- *   返回值类型写在方法名前面（这里是 int）。调用 add(3, 4) 会得到 7。
+ *   方法可以接收“参数”作为输入，并把一个计算结果作为输出“返回”给
+ *   调用者。返回值的类型写在方法名前面：返回整数就写 int。方法内部
+ *   用 return 把结果交回去，调用方拿到这个结果后可以接着使用。一个
+ *   有返回值的方法，必须保证每条执行路径都把结果返回出去。
  *
  * 【本关任务】
- *   实现 add(a, b)，返回两个整数的和。
- *
- * 【如何闯关】
- *   把 add 里那行 throw 替换成 return a + b;，运行对照输出。
+ *   实现 add(a, b)，返回两个整数 a 与 b 的和。
+ *   main 里会用 add(3, 4) 取得结果并打印「3 + 4 = 7」。
  * ============================================================
  */
 public class Ex02_ParamsAndReturn {
 
     static int add(int a, int b) {
-        // TODO(关卡2-1)：返回 a + b 的结果
-        return a + b;
-        //   提示：return a + b;
+        // TODO(关卡2-1)：返回 a 与 b 的和
+        throw new UnsupportedOperationException("请补全：返回 a + b 的结果");
     }
 
     public static void main(String[] args) {
@@ -39,6 +35,7 @@ public class Ex02_ParamsAndReturn {
  * ===============================================================
  *
  * 排查提示：
- *  - 别忘了 return，方法有返回值时必须把结果 return 出去。
+ *  - 运行时若抛出 UnsupportedOperationException，说明方法体还没补全。
+ *  - 别忘了 return，方法有返回值时必须把结果返回出去。
  *  - 试着再调用一次 add(100, 200)，看看能不能得到 300。
  */

@@ -9,18 +9,16 @@ import java.lang.reflect.Method;
  * 关卡：Ex04 反射读字段、调方法
  * ------------------------------------------------------------
  * 【知识点】
- *   反射能在运行时“动态地”读取字段、调用方法（即使不在编译期写死）：
- *       Field f = clazz.getField("name");   // 拿到字段
- *       Object v = f.get(对象);              // 读取该对象这个字段的值
- *       Method m = clazz.getMethod("greet"); // 拿到方法
- *       Object r = m.invoke(对象);           // 调用该对象的这个方法
- *   反射操作可能抛异常，所以 main 声明了 throws Exception。
+ *   反射能在运行时“动态地”读取对象的字段、调用对象的方法，而不必在
+ *   编译期就把字段名、方法名写死：先从 Class 对象拿到对应的“字段”或
+ *   “方法”，再把它作用到某个具体对象上，就能取到字段值 / 触发方法调用。
+ *   反射相关操作可能抛出受检异常，所以 main 声明了 throws Exception。
  *
  * 【本关任务】
- *   用反射读取 person 的 name 字段值。
- *
- * 【如何闯关】
- *   把 nameValue 改成 nameField.get(p)，运行对照输出。
+ *   下方 Person 有一个 public 字段 name（值为「小明」）和方法 greet()。
+ *   已经帮你拿到了对象 p 和它的 Class 对象 clazz。请：
+ *   1. 用反射读取 p 的 name 字段值，打印「字段 name = 小明」。
+ *   2. 用反射调用 p 的 greet() 方法，打印「调用 greet() = 你好，我是 小明」。
  * ============================================================
  */
 public class Ex04_ReflectFieldMethod {
@@ -37,14 +35,9 @@ public class Ex04_ReflectFieldMethod {
         Person p = new Person();
         Class<?> clazz = p.getClass();
 
-        Field nameField = clazz.getField("name");
-        // TODO(关卡4-1)：把 null 改成 nameField.get(p)
-        Object nameValue = nameField.get(p);
-        System.out.println("字段 name = " + nameValue);
+        // TODO(关卡4-1)：用反射读取 p 的 name 字段值，打印「字段 name = 小明」
 
-        Method greetMethod = clazz.getMethod("greet");
-        Object result = greetMethod.invoke(p); // 反射调用 p.greet()
-        System.out.println("调用 greet() = " + result);
+        // TODO(关卡4-2)：用反射调用 p 的 greet() 方法，打印「调用 greet() = 你好，我是 小明」
     }
 }
 
@@ -55,6 +48,6 @@ public class Ex04_ReflectFieldMethod {
  * ===============================================================
  *
  * 排查提示：
- *  - 如果“字段 name =”后面是 null，说明还没用 nameField.get(p) 真正去读。
+ *  - 如果“字段 name =”后面是 null 或为空，说明还没真正用反射读出字段值。
  *  - 反射调用 greet() 的效果，和直接写 p.greet() 是一样的，只是“动态”得多。
  */

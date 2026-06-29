@@ -6,25 +6,23 @@ package com.learn.m11_generics;
  * 关卡：Ex02 泛型方法
  * ------------------------------------------------------------
  * 【知识点】
- *   方法也可以是泛型的：在返回类型前面写 <T> 声明类型参数，
- *   就能用同一个方法处理不同类型的数组：
- *       static <T> T firstOf(T[] array) { return array[0]; }
- *       firstOf(names)  // T 是 String
- *       firstOf(nums)   // T 是 Integer
+ *   方法本身也可以是泛型的：在返回类型前面写 <T> 声明一个类型参数，
+ *   这个方法就能用同一份代码处理不同类型的数组——传字符串数组时 T 就是
+ *   字符串，传整数数组时 T 就是整数，返回类型也随之自动确定。
  *
  * 【本关任务】
- *   补全 firstOf，返回数组的第一个元素。
- *
- * 【如何闯关】
- *   把方法里的 throw 替换成 return array[0];，运行对照输出。
+ *   下方泛型方法 firstOf 的签名 <T> T firstOf(T[] array) 已给好，方法体待补：
+ *   它应当返回传入数组的第一个元素。补全后，main 里对名字数组与数字数组的
+ *   两次调用应使程序打印：
+ *       第一个名字 = Alice
+ *       第一个数字 = 10
  * ============================================================
  */
 public class Ex02_GenericMethod {
 
     static <T> T firstOf(T[] array) {
-        // TODO(关卡2-1)：返回数组的第一个元素
-        return array[0];
-        //   提示：return array[0];
+        // TODO(关卡2-1)：返回数组 array 的第一个元素
+        throw new UnsupportedOperationException("请补全：firstOf 应返回数组的第一个元素");
     }
 
     public static void main(String[] args) {

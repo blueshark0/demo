@@ -9,17 +9,16 @@ import java.util.List;
  * 关卡：Ex04 通配符 ? extends
  * ------------------------------------------------------------
  * 【知识点】
- *   List<Integer> 并不是 List<Number> 的子类型，所以一个只接收
- *   List<Number> 的方法没法传入 List<Integer>。通配符解决了这个问题：
- *       static double sumList(List<? extends Number> list) { ... }
- *   ? extends Number 表示“元素是某种 Number 子类型”的列表，于是
- *   List<Integer> 和 List<Double> 都能传进来（这种列表适合“只读”取数据）。
+ *   List<Integer> 并不是 List<Number> 的子类型，所以一个只接收 List<Number>
+ *   的方法没法传入 List<Integer>。通配符就是为了解决这个问题：用 ? extends Number
+ *   表示“元素是某种 Number 子类型”的列表，于是整数列表、小数列表都能传进来。
+ *   这样声明的列表适合“只读”地取数据（不能往里 add 新元素）。
  *
  * 【本关任务】
- *   补全 sumList，把列表里每个数转成 double 累加。
- *
- * 【如何闯关】
- *   在循环里补一行把 n.doubleValue() 加到 total，运行对照输出。
+ *   下方方法 sumList 用了通配符参数 List<? extends Number>，签名与循环骨架已给好，
+ *   方法体待补：遍历列表时，把每个元素转成 double 累加到 total 上。补全后程序应打印：
+ *       整数列表和 = 6.0
+ *       小数列表和 = 4.0
  * ============================================================
  */
 public class Ex04_Wildcards {
@@ -27,9 +26,7 @@ public class Ex04_Wildcards {
     static double sumList(List<? extends Number> list) {
         double total = 0;
         for (Number n : list) {
-            // TODO(关卡4-1)：把 n 转成 double 加到 total
-            total += n.doubleValue();
-            //   提示：total += n.doubleValue();
+            // TODO(关卡4-1)：把当前元素 n 转成 double，并累加到 total 上
         }
         return total;
     }

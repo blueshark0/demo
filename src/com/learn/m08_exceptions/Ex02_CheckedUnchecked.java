@@ -6,17 +6,16 @@ package com.learn.m08_exceptions;
  * 关卡：Ex02 受检异常 与 非受检异常
  * ------------------------------------------------------------
  * 【知识点】
- *   非受检异常（运行时异常，RuntimeException 的子类，如除零的
- *   ArithmeticException）：编译器不强制你处理，但运行时可能爆出来。
- *   受检异常（如 Exception、IOException）：编译器“强制”你必须处理——
- *   要么用 try-catch 捕获，要么在方法上用 throws 声明继续往外抛。
+ *   非受检异常（运行时异常，是 RuntimeException 的子类，例如整数除零时的
+ *   ArithmeticException）：编译器不强制你处理，但运行时仍可能爆出来。
+ *   受检异常（如 Exception、IOException）：编译器“强制”你必须处理——要么用
+ *   try-catch 捕获，要么在方法签名上用 throws 声明，把它继续往外抛。
  *
  * 【本关任务】
- *   1. 制造一个除零的运行时异常并捕获。
- *   2. 让 readData 抛出受检异常并捕获。
- *
- * 【如何闯关】
- *   按 TODO 修改两处，运行对照输出。
+ *   1. 在第一个 try 块里制造一个整数除零的运行时异常并被捕获，使其打印
+ *      「捕获运行时异常：/ by zero」（消息文本由除零异常自带，为 "/ by zero"）。
+ *   2. 调用 readData 时让它真正抛出受检异常并被捕获，使其打印
+ *      「捕获受检异常：读取数据失败」。
  * ============================================================
  */
 public class Ex02_CheckedUnchecked {
@@ -34,16 +33,16 @@ public class Ex02_CheckedUnchecked {
         int b = 0;
 
         try {
-            // TODO(关卡2-1)：把 a / 1 改成 a / b，制造除零的运行时异常
-            int result = a / b;
+            // TODO(关卡2-1)：用 a 和 b 做一次整数除法，制造除零的运行时异常
+            int result = a / 1;
             System.out.println("除法结果 = " + result);
         } catch (ArithmeticException e) {
             System.out.println("捕获运行时异常：" + e.getMessage());
         }
 
         try {
-            // TODO(关卡2-2)：把 false 改成 true，让 readData 抛出受检异常
-            readData(true);
+            // TODO(关卡2-2)：调用 readData，让它走到抛出受检异常的分支
+            readData(false);
         } catch (Exception e) {
             System.out.println("捕获受检异常：" + e.getMessage());
         }

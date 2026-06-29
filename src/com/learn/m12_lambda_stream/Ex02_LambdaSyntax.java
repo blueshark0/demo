@@ -8,16 +8,17 @@ import java.util.Arrays;
  * 关卡：Ex02 Lambda 语法
  * ------------------------------------------------------------
  * 【知识点】
- *   很多 Java 内置接口都能用 Lambda 实现，例如：
- *     Runnable：无参无返回   () -> System.out.println("...")
- *     Comparator：比较两个值 (a, b) -> a - b   （负数表示 a 排在前面）
- *   把 Comparator 传给 Arrays.sort，就能自定义排序规则。
+ *   很多 Java 内置接口都能用 Lambda 实现，例如 Runnable（无参、无返回，
+ *   描述“要做的一件事”）和 Comparator（比较两个值，返回负数表示前者排在
+ *   前面、正数表示排在后面、0 表示视为相等）。把一个 Comparator 传给
+ *   Arrays.sort，就能用自己定义的规则给数组排序。
  *
  * 【本关任务】
- *   用 Lambda 定义比较器，让字符串数组“按长度从短到长”排序。
- *
- * 【如何闯关】
- *   把比较器 (a, b) -> 0 改成 (a, b) -> a.length() - b.length()，运行对照输出。
+ *   下方已给定数组 words = {"banana", "fig", "apple"}（保持不变）。
+ *   请用 Lambda 写一个比较器传给 Arrays.sort，让数组“按字符串长度从短到长”
+ *   排序，使程序打印：
+ *       Runnable 跑起来了
+ *       [fig, apple, banana]
  * ============================================================
  */
 public class Ex02_LambdaSyntax {
@@ -29,8 +30,8 @@ public class Ex02_LambdaSyntax {
 
         String[] words = {"banana", "fig", "apple"};
 
-        // TODO(关卡2-1)：把 0 改成 a.length() - b.length()，按长度排序
-        Arrays.sort(words, (a, b) -> a.length() - b.length());
+        // TODO(关卡2-1)：用 Lambda 写一个比较器，让 words 按字符串长度从短到长排序
+        Arrays.sort(words, (a, b) -> 0);
 
         System.out.println(Arrays.toString(words));
     }

@@ -6,27 +6,22 @@ package com.learn.m10_enums;
  * 关卡：Ex02 带字段的枚举
  * ------------------------------------------------------------
  * 【知识点】
- *   枚举常量可以携带“数据”。给枚举加字段和构造器，每个常量在定义时
- *   传入自己的值：
- *       enum Planet {
- *           EARTH(9.8), JUPITER(24.8);   // 括号里是传给构造器的参数
- *           private final double gravity;
- *           Planet(double gravity) { this.gravity = gravity; }
- *           public double getGravity() { return gravity; }
- *       }
+ *   枚举常量不仅是一个名字，还可以携带自己的“数据”。做法是给枚举加上
+ *   字段和构造器，然后在列举每个常量时，于常量名后的括号里传入它各自
+ *   的值——这些值会通过构造器存进字段。之后就能用普通的取值方法读出
+ *   某个常量携带的数据。枚举的构造器自动是私有的，外部无法 new。
  *
  * 【本关任务】
- *   把 p 赋值为 Planet.EARTH，并打印它的重力。
- *
- * 【如何闯关】
- *   把 null 改成 Planet.EARTH，运行对照输出。
+ *   下方已写好枚举 Planet（含 MERCURY/EARTH/JUPITER 三个常量，各自带一个
+ *   重力值）。把变量 p 赋值为表示“地球”的那个常量，使程序打印：
+ *       EARTH 的重力是 9.8
  * ============================================================
  */
 public class Ex02_EnumWithFields {
 
     public static void main(String[] args) {
-        // TODO(关卡2-1)：把 null 改成 Planet.EARTH
-        Planet p = Planet.EARTH;
+        // TODO(关卡2-1)：把 p 赋值为表示“地球”的枚举常量，使下面打印「EARTH 的重力是 9.8」
+        Planet p = null;
 
         System.out.println(p + " 的重力是 " + p.getGravity());
     }
