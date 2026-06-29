@@ -33,6 +33,11 @@
 | 14 | `m14_commonapi` | 常用 API | Math、包装类、日期时间、Random、Scanner |
 | 15 | `m15_fileio` | 文件 IO 入门 | 读写文本文件、Path、try-with-resources |
 | 16 | `m16_annotation_reflect` | 注解与反射入门 | 内置/自定义注解、Class 对象、反射 |
+| 17 | `m17_innerclass` | 内部类与匿名类 | 成员/静态/局部内部类、匿名类实现抽象类 |
+| 18 | `m18_stream_collectors` | Stream 进阶 / Collectors | 分组、计数、toMap、joining、flatMap、IntStream 统计 |
+| 19 | `m19_comparator_sort` | 比较器与排序进阶 | Comparable、比较器链、TreeMap/TreeSet、computeIfAbsent/merge |
+| 20 | `m20_regex` | 正则表达式 | matches、Pattern/Matcher 分组、replaceAll、正则 split |
+| 21 | `m21_concurrency` | 多线程入门 | Thread/Runnable、join、synchronized、原子类、线程池 |
 
 每个模块下有 3–5 个练习（`Ex01`、`Ex02`……），按编号顺序由浅入深。每个模块目录里还有一份 `README.md` 导读。
 
