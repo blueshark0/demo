@@ -23,9 +23,11 @@ public class Ex01_GenericClass {
     public static void main(String[] args) {
         Box<String> strBox = new Box<>();
         // TODO(关卡1-1)：往字符串盒子 strBox 里放入字符串 "你好"
+        strBox.set(new String("你好"));
 
         Box<Integer> intBox = new Box<>();
         // TODO(关卡1-2)：往整数盒子 intBox 里放入整数 42
+        intBox.set(new Integer(42));
 
         System.out.println("字符串盒子：" + strBox.get());
         System.out.println("整数盒子：" + intBox.get());
@@ -37,12 +39,16 @@ class Box<T> {          // T 是类型参数
 
     public void set(T value) {
         // TODO(关卡1-3)：把传入的 value 存进字段 this.value
+        this.value = value;
     }
 
     public T get() {
         // TODO(关卡1-4)：把字段里存的值返回出去
-        throw new UnsupportedOperationException("请补全：get 应返回盒子里存的值");
+        return this.value;
     }
+
+
+
 }
 
 /*

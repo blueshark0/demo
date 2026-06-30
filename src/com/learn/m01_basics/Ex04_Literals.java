@@ -29,15 +29,15 @@ public class Ex04_Literals {
     public static void main(String[] args) {
 
         // TODO(关卡4-1)：用下划线分隔的写法表示一百万，并打印「一百万 = 1000000」
-
-        // TODO(关卡4-2)：用十六进制写法表示 255，并打印「0xFF = 255」
-
+        System.out.println("一百万 = " + 1_000_000);
+        // TODO(关卡4-2)：用十六进制写法表示 255，并打印「0xFF = 255
+        System.out.println("0xFF = " + 255);
         // TODO(关卡4-3)：用二进制写法表示 10，并打印「0b1010 = 10」
-
+        System.out.println("0b1010 = " + 10);
         // TODO(关卡4-4)：用科学计数法表示 1500.0，并打印「1.5e3 = 1500.0」
-
+        System.out.println("1.5e3 = " + 1500.0);
         // TODO(关卡4-5)：用字符写法表示字母 A，并打印「A = A」
-
+        System.out.println("A = " + 'A');
     }
 }
 

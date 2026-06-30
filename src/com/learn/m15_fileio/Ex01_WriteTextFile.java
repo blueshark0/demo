@@ -38,6 +38,7 @@ public class Ex01_WriteTextFile {
         // TODO(关卡1-1)：把 lines 这三行文本写入 file 文件
 
 
+
         System.out.println("已写入文件：" + file);
         System.out.println("文件是否存在：" + Files.exists(file));
     }

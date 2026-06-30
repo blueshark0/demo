@@ -1,5 +1,7 @@
 package com.learn.m10_enums;
 
+import static com.learn.m10_enums.Operation.PLUS;
+
 /*
  * ============================================================
  * 模块：m10 枚举
@@ -23,7 +25,7 @@ public class Ex03_EnumMethods {
 
     public static void main(String[] args) {
         // TODO(关卡3-1)：把 op 赋值为表示“加法”的枚举常量，使下面打印「3 PLUS 4 = 7」
-        Operation op = null;
+        Operation op = Operation.PLUS;
 
         System.out.println("3 PLUS 4 = " + op.apply(3, 4));
         System.out.println("3 TIMES 4 = " + Operation.TIMES.apply(3, 4));
@@ -34,13 +36,13 @@ enum Operation {
     PLUS {
         public int apply(int a, int b) {
             // TODO(关卡3-2)：实现“加法”，返回 a 与 b 相加的结果
-            throw new UnsupportedOperationException("请补全：PLUS 的 apply 应返回 a 加 b");
+            return a + b;
         }
     },
     TIMES {
         public int apply(int a, int b) {
             // TODO(关卡3-3)：实现“乘法”，返回 a 与 b 相乘的结果
-            throw new UnsupportedOperationException("请补全：TIMES 的 apply 应返回 a 乘 b");
+            return a * b;
         }
     };
 

@@ -50,12 +50,15 @@ class Person {
     @Override
     public String toString() {
         // TODO(关卡6-1)：拼出并返回形如 "Person{name=小明, age=18}" 的字符串
-        throw new UnsupportedOperationException("请补全：返回形如 Person{name=..., age=...} 的字符串");
+        return "Person{name=" + name +"," + "age=" +age;
+        
     }
 
     @Override
     public boolean equals(Object o) {
         // TODO(关卡6-2)：当 o 也是 Person，且 name、age 都相同时返回 true，否则返回 false
+
+        
         //   （先判断 o 是不是 Person，再把它转成 Person 比较两个字段）
         throw new UnsupportedOperationException("请补全：name 与 age 都相同时返回 true");
     }

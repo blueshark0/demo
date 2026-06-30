@@ -22,7 +22,7 @@ public class Ex02_GenericMethod {
 
     static <T> T firstOf(T[] array) {
         // TODO(关卡2-1)：返回数组 array 的第一个元素
-        throw new UnsupportedOperationException("请补全：firstOf 应返回数组的第一个元素");
+        return array[0];
     }
 
     public static void main(String[] args) {

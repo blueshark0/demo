@@ -39,17 +39,17 @@ public class Ex04_Bitwise {
         int b = 3;
 
         // TODO(关卡4-1)：a 按位与 b，结果赋给 and
-        int and = 0;
+        int and = a&b;
         // TODO(关卡4-2)：a 按位或 b，结果赋给 or
-        int or = 0;
+        int or = a|b;
         // TODO(关卡4-3)：a 按位异或 b，结果赋给 xor
-        int xor = 0;
+        int xor = a^b;
         // TODO(关卡4-4)：对 a 按位取反，结果赋给 not
-        int not = 0;
+        int not = ~a;
         // TODO(关卡4-5)：把 a 左移 1 位，结果赋给 shiftLeft
-        int shiftLeft = 0;
+        int shiftLeft = a<<1;
         // TODO(关卡4-6)：把 a 右移 1 位，结果赋给 shiftRight
-        int shiftRight = 0;
+        int shiftRight = a>>1;
 
         System.out.println("6 & 3 = " + and);
         System.out.println("6 | 3 = " + or);

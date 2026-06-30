@@ -30,7 +30,8 @@ public class Ex03_JavaTime {
         LocalDate date = LocalDate.of(2024, 1, 15);
 
         // TODO(关卡3-1)：在 date 的基础上往后推 20 天，结果赋给 later（应为 2024/02/04）
-        LocalDate later = date;
+        LocalDate later = date.plusDays(20);;
+
 
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         System.out.println("原日期 = " + date.format(fmt));

@@ -1,5 +1,8 @@
 package com.learn.m14_commonapi;
 
+
+import static java.lang.Double.parseDouble;
+
 /*
  * ============================================================
  * 模块：m14 常用 API
@@ -24,9 +27,10 @@ public class Ex02_WrapperParse {
 
     public static void main(String[] args) {
         // TODO(关卡2-1)：把字符串 "100" 解析成 int，赋给 n（应为 100）
-        int n = 0;
+        int n = Integer.parseInt("100");
         // TODO(关卡2-2)：把字符串 "3.14" 解析成 double，赋给 d（应为 3.14）
-        double d = 0;
+
+        double d = Double.parseDouble("3.14");
 
         Integer boxed = 42;   // 自动装箱：int 42 变成 Integer 对象
         int unboxed = boxed;  // 自动拆箱：Integer 变回 int

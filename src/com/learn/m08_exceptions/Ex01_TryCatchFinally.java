@@ -25,7 +25,7 @@ public class Ex01_TryCatchFinally {
 
         try {
             // TODO(关卡1-1)：访问 arr 的一个越界下标（数组只有 3 个元素），制造下标越界
-            int x = arr[0];
+            int x = arr[3];
             System.out.println("访问成功，x = " + x);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("捕获到异常：下标越界");

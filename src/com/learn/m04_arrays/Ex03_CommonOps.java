@@ -33,19 +33,18 @@ public class Ex03_CommonOps {
         int max = data[0];
         for (int v : data) {
             // TODO(关卡3-1)：如果 v 比当前 max 大，就用 v 更新 max
-
+            max = v > max ? v : max;
 
         }
 
         int min = data[0];
         for (int v : data) {
             // TODO(关卡3-2)：如果 v 比当前 min 小，就用 v 更新 min
-
-
+            min = v < min ? v : min;
         }
 
         // TODO(关卡3-3)：用 Arrays 工具类把 data 从小到大原地排序
-
+        Arrays.sort(data);
 
         System.out.println("最大值 = " + max);
         System.out.println("最小值 = " + min);

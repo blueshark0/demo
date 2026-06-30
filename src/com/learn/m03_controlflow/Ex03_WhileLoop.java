@@ -26,6 +26,7 @@ public class Ex03_WhileLoop {
 
         while (i <= n) {
             // TODO(关卡3-1)：把当前的 i 累加到 sum
+            sum = sum + i;
             i++; // i 每次加 1，最终超过 n 让循环结束
         }
 

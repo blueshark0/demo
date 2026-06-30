@@ -35,18 +35,19 @@ public class Ex05_Collections {
         Collections.addAll(nums, 3, 1, 4, 1, 5, 9, 2);
 
         // TODO(关卡5-1)：求出 nums 的最大值，赋给 max
-        int max = 0;
+        int max = Collections.max(nums);
         // TODO(关卡5-2)：求出 nums 的最小值，赋给 min
-        int min = 0;
+        int min = Collections.min(nums);
 
         // TODO(关卡5-3)：把 nums 从小到大排序（原地修改 nums）
-
+        Collections.sort(nums);
 
         System.out.println("最大值 = " + max);
         System.out.println("最小值 = " + min);
         System.out.println("排序后 = " + nums);
 
         // TODO(关卡5-4)：把 nums 反转（原地修改 nums）
+        Collections.reverse(nums);
 
 
         System.out.println("反转后 = " + nums);

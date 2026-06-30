@@ -46,12 +46,14 @@ class Dog extends Animal {
 
     Dog(String name) {
         // TODO(关卡4-1)：在构造器第一行调用父类的带参构造器，把 name 传进去
+        super.name = name;
         //   （留空时 Java 会自动调用父类无参构造器，name 会变成“未命名”，
         //    因此能编译运行，但输出对不上——补上这一行才正确）
     }
 
     void bark() {
         // TODO(关卡4-2)：打印 name，后面跟一个空格和「汪汪叫」，例如「旺财 汪汪叫」
+        System.out.println(name + " " + "汪汪叫");
     }
 }
 

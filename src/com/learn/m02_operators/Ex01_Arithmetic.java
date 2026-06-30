@@ -30,15 +30,15 @@ public class Ex01_Arithmetic {
         int b = 5;
 
         // TODO(关卡1-1)：算出 a 与 b 的和，赋给 sum
-        int sum = 0;
+        int sum = a+b;
         // TODO(关卡1-2)：算出 a 与 b 的差，赋给 diff
-        int diff = 0;
+        int diff = a-b;
         // TODO(关卡1-3)：算出 a 与 b 的积，赋给 product
-        int product = 0;
+        int product = a*b;
         // TODO(关卡1-4)：算出 a 除以 b 的商（整数除法），赋给 quotient
-        int quotient = 0;
+        int quotient = a/b;
         // TODO(关卡1-5)：算出 a 除以 b 的余数（取余），赋给 remainder
-        int remainder = 0;
+        int remainder = a%b;
 
         System.out.println("17 + 5 = " + sum);
         System.out.println("17 - 5 = " + diff);

@@ -21,7 +21,7 @@ public class Ex02_EnumWithFields {
 
     public static void main(String[] args) {
         // TODO(关卡2-1)：把 p 赋值为表示“地球”的枚举常量，使下面打印「EARTH 的重力是 9.8」
-        Planet p = null;
+        Planet p = Planet.valueOf("EARTH");
 
         System.out.println(p + " 的重力是 " + p.getGravity());
     }

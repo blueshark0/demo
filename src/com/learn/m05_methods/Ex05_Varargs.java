@@ -23,7 +23,11 @@ public class Ex05_Varargs {
 
     static int sum(int... nums) {
         // TODO(关卡5-1)：遍历 nums 把所有元素累加起来并返回（没有元素时结果为 0）
-        throw new UnsupportedOperationException("请补全：返回 nums 中所有元素的和");
+        int sum1 = 0;
+        for (int x : nums) {
+            sum1 = sum1 + x;
+        }
+        return sum1;
     }
 
     public static void main(String[] args) {

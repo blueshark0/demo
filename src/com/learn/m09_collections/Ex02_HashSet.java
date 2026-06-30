@@ -28,6 +28,9 @@ public class Ex02_HashSet {
         Set<String> set = new HashSet<>();
 
         // TODO(关卡2-1)：依次往 set 添加 "a"、"b"、"a"（第三个是重复的 "a"）
+        set.add("a");
+        set.add("b");
+        set.add("a");
 
 
         System.out.println("集合大小 = " + set.size()); // 重复的 a 只算一次

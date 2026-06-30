@@ -23,13 +23,13 @@ public class Ex02_Variables {
     public static void main(String[] args) {
 
         // TODO(关卡2-1)：声明 int 变量 age，赋值为 18
-
+        int age = 18;
         // TODO(关卡2-2)：声明 String 变量 name，赋值为 "小明"
-
+        String name = "小明";
         // TODO(关卡2-3)：打印「姓名：小明」，即固定文字「姓名：」后拼接 name 的值
-
+        System.out.println("姓名：" + name);
         // TODO(关卡2-4)：打印「年龄：18」，即固定文字「年龄：」后拼接 age 的值
-
+        System.out.println("年龄：" + age);
     }
 }
 
@@ -41,5 +41,6 @@ public class Ex02_Variables {
  *
  * 排查提示：
  *  - 若“姓名：”后面是空的，说明 name 还没赋值。
+ *
  *  - 若年龄不是 18，检查 age 的赋值。
  */

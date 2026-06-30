@@ -23,13 +23,13 @@ public class Ex01_Math {
 
     public static void main(String[] args) {
         // TODO(关卡1-1)：求 -5 的绝对值，结果赋给 abs（应为 5）
-        int abs = 0;
+        int abs = Math.abs(-5);
         // TODO(关卡1-2)：求 3 和 8 中的较大值，结果赋给 max（应为 8）
-        int max = 0;
+        int max = Math.max(3,8) ;
         // TODO(关卡1-3)：求 2 的 10 次方，结果赋给 pow（应为 1024.0）
-        double pow = 0;
+        double pow = Math.pow(2,10);
         // TODO(关卡1-4)：求 144 的平方根，结果赋给 sqrt（应为 12.0）
-        double sqrt = 0;
+        double sqrt = Math.sqrt(144);
 
         System.out.println("abs(-5) = " + abs);
         System.out.println("max(3, 8) = " + max);

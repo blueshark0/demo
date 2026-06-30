@@ -29,6 +29,9 @@ public class Ex04_Random {
 
         for (int i = 0; i < 3; i++) {
             // TODO(关卡4-1)：用 random 取一个 [0, 100) 的随机整数并打印（依次应为 30、63、48）
+            int num = random.nextInt(100);
+            System.out.println(num);
+
         }
     }
 }

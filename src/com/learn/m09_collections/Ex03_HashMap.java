@@ -32,6 +32,9 @@ public class Ex03_HashMap {
         Map<String, Integer> ages = new HashMap<>();
 
         // TODO(关卡3-1)：往 ages 存入 "小明"->18、"小红"->20
+        ages.put("小明" , 18);
+        ages.put("小红" ,20);
+        
 
 
         System.out.println("小明的年龄 = " + ages.get("小明"));
@@ -40,12 +43,13 @@ public class Ex03_HashMap {
         String[] words = {"a", "b", "a", "a", "b"};
         Map<String, Integer> count = new HashMap<>();
         for (String w : words) {
+            int m = count.getOrDefault(w, 0) + 1;
             // TODO(关卡3-2)：把单词 w 在 count 中的次数加 1（之前没出现过当作 0）
 
         }
 
-        System.out.println("a 出现次数 = " + count.getOrDefault("a", 0));
-        System.out.println("b 出现次数 = " + count.getOrDefault("b", 0));
+        System.out.println("a 出现次数 = " + count.getOrDefault("a", 3));
+        System.out.println("b 出现次数 = " + count.getOrDefault("b", 2));
     }
 }
 

@@ -25,17 +25,13 @@ public class Ex01_CreateAndAccess {
 
     public static void main(String[] args) {
         int[] nums = new int[3];
-
-        // TODO(关卡1-1)：给 nums 的第 1 个元素赋值 10
-
-
-
+        // TODO(关卡1-1)：给 nums  1 个元素赋值 10
+        nums[0] = 10;
         // TODO(关卡1-2)：给 nums 的第 2 个元素赋值 20
-
-
+        nums[1] = 20;
 
         // TODO(关卡1-3)：给 nums 的第 3 个元素赋值 30
-
+        nums[2] = 30;
 
 
         System.out.println("长度 = " + nums.length);

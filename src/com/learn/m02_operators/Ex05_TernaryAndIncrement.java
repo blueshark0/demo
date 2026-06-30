@@ -32,15 +32,15 @@ public class Ex05_TernaryAndIncrement {
         int b = 5;
 
         // TODO(关卡5-1)：用三元运算符取 a、b 中的较大值，赋给 max
-        int max = 0;
+        int max = a > b ? a : b;
 
         int i = 10;
         // TODO(关卡5-2)：用后自增，把 i 当前的值赋给 j（之后 i 自己变成 11）
-        int j = 0;
+        int j = i++;
 
         int m = 10;
         // TODO(关卡5-3)：用前自增，让 m 先变 11，再把这个新值赋给 n
-        int n = 0;
+        int n = ++m;
 
         System.out.println("较大值 = " + max);
         System.out.println("i++ 之后：j = " + j + ", i = " + i);

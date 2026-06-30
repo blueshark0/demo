@@ -27,11 +27,11 @@ public class Ex05_Format {
         int age = 18;
 
         // TODO(关卡5-1)：用模板「姓名：%s，年龄：%d」把 name、age 填进去，赋给 info
-        String info = "";
+        String info = String.format("姓名：%s，年龄：%d ", name , age);
 
         double price = 3.14159;
         // TODO(关卡5-2)：用模板「价格：%.2f」把 price 填进去（保留两位小数），赋给 priceStr
-        String priceStr = "";
+        String priceStr = String.format("价格：%.2f",price);
 
         System.out.println(info);
         System.out.println(priceStr);

@@ -44,6 +44,7 @@ public class Ex01_BuiltinAnnotations {
         Child c = new Child();
 
         // TODO(关卡1-1)：在 c 上调用 hello() 方法，使其打印「Child.hello」
+        c.hello();
 
         oldFeature(); // 调用被 @Deprecated 标记的方法（仍能正常运行）
     }

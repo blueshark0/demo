@@ -20,7 +20,11 @@ public class Ex04_Recursion {
 
     static long factorial(int n) {
         // TODO(关卡4-1)：用递归返回 n!（记得先写终止条件，再让方法调用自己缩小问题）
-        throw new UnsupportedOperationException("请补全：用递归返回 n 的阶乘");
+        if (n <= 1) {
+            return 1;
+        }
+        return n * factorial(n -1);
+
     }
 
     public static void main(String[] args) {

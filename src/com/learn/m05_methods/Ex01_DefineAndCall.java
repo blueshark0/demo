@@ -20,6 +20,7 @@ public class Ex01_DefineAndCall {
 
     static void greet() {
         // TODO(关卡1-1)：让本方法打印一行 “大家好，我是方法！”
+        System.out.println("大家好，我是方法！");
     }
 
     public static void main(String[] args) {

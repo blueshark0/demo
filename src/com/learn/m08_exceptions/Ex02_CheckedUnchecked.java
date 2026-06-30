@@ -34,7 +34,7 @@ public class Ex02_CheckedUnchecked {
 
         try {
             // TODO(关卡2-1)：用 a 和 b 做一次整数除法，制造除零的运行时异常
-            int result = a / 1;
+            int result = a / b;
             System.out.println("除法结果 = " + result);
         } catch (ArithmeticException e) {
             System.out.println("捕获运行时异常：" + e.getMessage());
@@ -42,7 +42,7 @@ public class Ex02_CheckedUnchecked {
 
         try {
             // TODO(关卡2-2)：调用 readData，让它走到抛出受检异常的分支
-            readData(false);
+            readData(true);
         } catch (Exception e) {
             System.out.println("捕获受检异常：" + e.getMessage());
         }

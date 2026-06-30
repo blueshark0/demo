@@ -45,7 +45,8 @@ class Circle implements Shape {
 
     public double area() {
         // TODO(关卡5-1)：返回圆面积 = 圆周率 × 半径 × 半径（圆周率用 Math.PI）
-        throw new UnsupportedOperationException("请补全：返回圆面积");
+        double area;
+        return area = Math.PI * radius * radius;
     }
 }
 
@@ -60,7 +61,8 @@ class Rectangle implements Shape {
 
     public double area() {
         // TODO(关卡5-2)：返回矩形面积 = 宽 × 高
-        throw new UnsupportedOperationException("请补全：返回矩形面积");
+        double area;
+        return area = width * height;
     }
 }
 

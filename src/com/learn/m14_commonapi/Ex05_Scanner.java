@@ -26,11 +26,12 @@ public class Ex05_Scanner {
 
         System.out.print("请输入你的名字：");
         // TODO(关卡5-1)：从 scanner 读取一整行作为名字，赋给 name
-        String name = "";
+
+        String name = scanner.next();
 
         System.out.print("请输入你的年龄：");
         // TODO(关卡5-2)：从 scanner 读取一个整数作为年龄，赋给 age
-        int age = 0;
+        int age = scanner.nextInt();
 
         System.out.println("你好，" + name + "！你今年 " + age + " 岁。");
         scanner.close();

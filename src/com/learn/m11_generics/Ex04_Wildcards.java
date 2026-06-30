@@ -27,6 +27,7 @@ public class Ex04_Wildcards {
         double total = 0;
         for (Number n : list) {
             // TODO(关卡4-1)：把当前元素 n 转成 double，并累加到 total 上
+
         }
         return total;
     }

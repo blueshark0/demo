@@ -35,18 +35,24 @@ public class Ex04_EnumSwitchAndValues {
         }
 
         // TODO(关卡4-1)：用“按名字查找常量”的方式，把名字 "SUMMER" 转成对应常量赋给 summer
-        Season summer = null;
+        Season summer = Season.SUMMER;
 
         // TODO(关卡4-2)：用 switch 根据 summer 选出活动赋给 activity
+
         //               SPRING→"踏青"、SUMMER→"游泳"、AUTUMN→"赏枫"、WINTER→"滑雪"
-        String activity = null;
+        String activity = switch (summer) {
+            case SPRING -> "踏青";
+            case SUMMER -> "游泳";
+            case AUTUMN -> "赏枫";
+            case WINTER -> "滑雪";
+        };
 
         System.out.println("夏天适合：" + activity);
     }
 }
 
 enum Season {
-    SPRING, SUMMER, AUTUMN, WINTER
+    SPRING, SUMMER, AUTUMN, WINTER;
 }
 
 /*

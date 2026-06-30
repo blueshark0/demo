@@ -22,12 +22,14 @@ public class Ex04_StringBuilder {
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
+        sb.append("a"); sb.append("b"); sb.append("c");
         // TODO(关卡4-1)：往 sb 末尾依次追加 "a"、"b"、"c"
 
         String built = sb.toString();
 
         StringBuilder sb2 = new StringBuilder("abcde");
         // TODO(关卡4-2)：把 sb2 整体反转
+        sb2.reverse();
 
         String reversed = sb2.toString();
 

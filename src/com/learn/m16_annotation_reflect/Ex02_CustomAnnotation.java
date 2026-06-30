@@ -35,8 +35,9 @@ public class Ex02_CustomAnnotation {
 
     public static void main(String[] args) {
         // TODO(关卡2-1)：用反射取得 MyService 类上的 @Info 注解对象
-
+        Class<?> clazz = MyService.class;
         // TODO(关卡2-2)：读出注解的 author 与 version 两个属性，分别打印
+       // System.out.println("作者 = " + clazz +"版本 = " +clazz);
         //               「作者 = 小明」与「版本 = 2」
     }
 }

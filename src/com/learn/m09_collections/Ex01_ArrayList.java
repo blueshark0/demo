@@ -31,6 +31,9 @@ public class Ex01_ArrayList {
         List<String> fruits = new ArrayList<>();
 
         // TODO(关卡1-1)：依次往 fruits 添加 "苹果"、"香蕉"、"橘子"（保持这个顺序）
+        fruits.add("苹果");
+        fruits.add("香蕉");
+        fruits.add("橘子");
 
 
         System.out.println("元素个数 = " + fruits.size());
@@ -38,6 +41,7 @@ public class Ex01_ArrayList {
         System.out.println("包含香蕉？ " + fruits.contains("香蕉"));
 
         // TODO(关卡1-2)：从 fruits 中删除 "香蕉"
+        fruits.remove("香蕉");
 
 
         System.out.println("删除香蕉后个数 = " + fruits.size());

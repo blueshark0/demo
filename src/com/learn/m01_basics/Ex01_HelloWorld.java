@@ -23,8 +23,9 @@ public class Ex01_HelloWorld {
     public static void main(String[] args) {
 
         // TODO(关卡1-1)：打印一行英文 Hello, World（逗号后保留一个空格）
-
+        System.out.println("Hello, World");
         // TODO(关卡1-2)：打印一行中文 你好，世界（使用中文全角逗号）
+        System.out.println("你好，世界");
 
     }
 }

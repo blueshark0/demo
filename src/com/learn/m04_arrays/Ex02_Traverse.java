@@ -27,14 +27,14 @@ public class Ex02_Traverse {
         int sum1 = 0;
         for (int i = 0; i < data.length; i++) {
             // TODO(关卡2-1)：把当前下标对应的元素累加到 sum1
-
+            sum1 = sum1 + data[i];
 
         }
 
         int sum2 = 0;
         for (int v : data) {
             // TODO(关卡2-2)：把当前元素 v 累加到 sum2
-
+            sum2 = sum2 + v;
 
         }
 

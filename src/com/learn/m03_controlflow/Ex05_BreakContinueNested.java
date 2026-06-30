@@ -28,8 +28,14 @@ public class Ex05_BreakContinueNested {
         for (int i = 1; i <= 9; i++) {
             for (int j = 1; j <= 9; j++) {
                 // TODO(关卡5-1)：判断 i 与 j 的乘积是否等于 12；若相等，
+                if(i * j == 12) {
+                    foundI = i;
+                    foundJ = j;
+                    break outer;
+                }
                 //               把 i、j 记到 foundI、foundJ，并用带标签的 break
                 //               一次跳出外层 outer 循环
+
             }
         }
 

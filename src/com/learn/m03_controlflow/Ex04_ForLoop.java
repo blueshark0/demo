@@ -25,6 +25,7 @@ public class Ex04_ForLoop {
 
         for (int col = 1; col <= 9; col++) {
             // TODO(关卡4-1)：打印当前的算式「row x col = 积」，末尾带一个空格，且不换行
+            System.out.print(row + "x" + col + "=" + row * col + " ");
         }
         System.out.println(); // 循环结束后换行
     }

@@ -23,11 +23,19 @@ public class Ex02_Switch {
         int day = 3;
 
         // TODO(关卡2-1)：用箭头写法的 switch，按 day 的取值得到对应中文星期，
-        //               并把结果赋给下面的 name；day=3 时结果应为「周三」，
-        //               列举之外的取值用 default 返回「无效」。
-        String name = "无效";
+        switch (day) {
+            case (1) -> System.out.println("第 " + day + " 天是 周一");
+            case (2) -> System.out.println("第 " + day + " 天是 周二");
+            case (3) -> System.out.println("第 " + day + " 天是 周三");
+            case (4) -> System.out.println("第 " + day + " 天是 周四");
+            case (5) -> System.out.println("第 " + day + " 天是 周五");
+            case (6) -> System.out.println("第 " + day + " 天是 周六");
+            case (7) -> System.out.println("第 " + day + " 天是 周日");
+            default -> System.out.println("无效");
+            //               并把结果赋给下面的 name；day=3 时结果应为「周三」，
+            //               列举之外的取值用 default 返回「无效」。
 
-        System.out.println("第 " + day + " 天是 " + name);
+        }
     }
 }
 

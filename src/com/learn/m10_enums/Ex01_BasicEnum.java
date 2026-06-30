@@ -22,7 +22,7 @@ public class Ex01_BasicEnum {
 
     public static void main(String[] args) {
         // TODO(关卡1-1)：把 today 赋值为表示“周三”的枚举常量，使下面打印「今天是 WED」
-        Weekday today = null;
+        Weekday today = Weekday.valueOf("WED");
 
         System.out.println("今天是 " + today);
         System.out.println("是不是周三？ " + (today == Weekday.WED));

@@ -1,5 +1,7 @@
 package com.learn.m01_basics;
 
+import java.net.SocketTimeoutException;
+
 /*
  * ============================================================
  * 模块：m01 基础语法与基本类型
@@ -34,21 +36,29 @@ public class Ex03_PrimitiveTypes {
     public static void main(String[] args) {
 
         // TODO(关卡3-1)：声明 byte b 并赋值为 100，随后打印「byte: 100」
-
+        byte b = 100;
+        System.out.println("byte: " + b);
         // TODO(关卡3-2)：声明 short s 并赋值为 20000，随后打印「short: 20000」
-
+        short s = 20000;
+        System.out.println("short: " + s);
         // TODO(关卡3-3)：声明 int i 并赋值为 100000，随后打印「int: 100000」
-
+        int i = 100000;
+        System.out.println("int: " + i);
         // TODO(关卡3-4)：声明 long l 并赋值为 10000000000（用 long 字面量写法），随后打印「long: 10000000000」
-
+        long l = 10_000_000_000l;
+        System.out.println("long: " + l);
         // TODO(关卡3-5)：声明 float f 并赋值为 3.14（用 float 字面量写法），随后打印「float: 3.14」
-
+        float f = 3.14f;
+        System.out.println("float: " + f);
         // TODO(关卡3-6)：声明 double d 并赋值为 2.718，随后打印「double: 2.718」
-
+        double d = 2.718;
+        System.out.println("double: " + d);
         // TODO(关卡3-7)：声明 char c 并赋值为大写字母 A（用单引号），随后打印「char: A」
-
+        char c = 'A';
+        System.out.println("char: " + c);
         // TODO(关卡3-8)：声明 boolean flag 并赋值为 true，随后打印「boolean: true」
-
+        boolean flag = true;
+        System.out.println("boolean: " + flag);
     }
 }
 

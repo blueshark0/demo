@@ -25,10 +25,10 @@ public class Ex01_IfElse {
         if (score >= 90) {
             grade = "优秀";
         // TODO(关卡1-1)：补全此处的 else if 判断条件，对应「良好」这一档
-        } else if (false) {
+        } else if (score >= 80) {
             grade = "良好";
         // TODO(关卡1-2)：补全此处的 else if 判断条件，对应「及格」这一档
-        } else if (false) {
+        } else if (score>=60) {
             grade = "及格";
         } else {
             grade = "不及格";

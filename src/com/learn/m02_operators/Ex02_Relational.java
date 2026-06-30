@@ -34,15 +34,15 @@ public class Ex02_Relational {
         int y = 20;
 
         // TODO(关卡2-1)：判断 x 是否大于 y，结果赋给 gt
-        boolean gt = false;
+        boolean gt = x>y;
         // TODO(关卡2-2)：判断 x 是否小于 y，结果赋给 lt
-        boolean lt = false;
+        boolean lt = x<y;
         // TODO(关卡2-3)：判断 x 是否等于 y，结果赋给 eq
-        boolean eq = false;
+        boolean eq = x==y;
         // TODO(关卡2-4)：判断 x 是否不等于 y，结果赋给 ne
-        boolean ne = false;
+        boolean ne = x!=y;
         // TODO(关卡2-5)：判断 x 是否大于等于 10，结果赋给 ge
-        boolean ge = false;
+        boolean ge = x>=10;
 
         System.out.println("10 > 20 ? " + gt);
         System.out.println("10 < 20 ? " + lt);
