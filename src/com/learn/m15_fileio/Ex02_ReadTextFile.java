@@ -38,7 +38,8 @@ public class Ex02_ReadTextFile {
         Files.write(file, Arrays.asList("apple", "banana", "cherry"));
 
         // TODO(关卡2-1)：一次性读取 file 的所有行，赋给 lines（替换下面的空列表占位）
-        List<String> lines = List.of();
+
+        List<String> lines = Files.readAllLines(file);
 
         System.out.println("共 " + lines.size() + " 行：");
         for (String line : lines) {

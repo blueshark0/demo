@@ -23,6 +23,7 @@ public class Ex03_BoundedType {
         double total = 0;
         for (T n : array) {
             // TODO(关卡3-1)：把当前元素 n 转成 double，并累加到 total 上
+            total = total + n.doubleValue();
 
         }
         return total;

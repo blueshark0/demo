@@ -22,6 +22,7 @@ public class Ex03_ClassObject {
 
     public static void main(String[] args) {
         // TODO(关卡3-1)：拿到 String 类的 Class 对象，打印它的全限定名和简单名
+
         //               目标：「c1 全名 = java.lang.String」「c1 简单名 = String」
 
         // TODO(关卡3-2)：通过字符串对象 "hello" 拿到它的 Class 对象，打印简单名
